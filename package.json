@@ -17,6 +17,7 @@
     "@svgr/webpack": "^6.5.1",
     "clsx": "^1.2.1",
     "next": "13.0.3",
+    "nodemailer": "^6.9.0",
     "notistack": "^2.0.8",
     "phosphor-react": "^1.4.1",
     "photoswipe": "^5.3.4",
