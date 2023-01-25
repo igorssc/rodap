@@ -4,12 +4,12 @@ import { Banner } from "./Banner";
 export const Footer = () => {
   return (
     <>
-      <span className="block text-center my-8 font-bold">
-        Rua Ana Batista da Cruz, nº 850, Belo Vale - Santa Luzia/MG
-      </span>
       <Banner className="py-7 flex flex-col gap-5">
+        <span className="block text-center font-bold">
+          Rua Ana Batista da Cruz, nº 850, Belo Vale - Santa Luzia/MG
+        </span>
         <strong className="font-normal">
-          © 2022 - Rodap Transportes Coletivos
+          © 2022 - {new Date().getFullYear()} - Rodap Transportes Coletivos
         </strong>
         <p>
           Desenvolvido por{" "}

@@ -21,8 +21,11 @@ export const FeaturedPost = ({ isSummary = false }: FeaturedPostProps) => {
       </div>
       <div className="flex flex-col gap-9 summary">
         <Title
-          scheme="secondary"
-          className={clsx("normal-case", isSummary ? "!text-lg" : "!text-2xl")}
+          scheme="tertiary"
+          className={clsx(
+            "normal-case !font-bold",
+            isSummary ? "!text-lg" : "!text-2xl"
+          )}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing el...
         </Title>

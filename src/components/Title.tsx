@@ -4,7 +4,7 @@ import { HTMLAttributes } from "react";
 
 interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
   asChild?: boolean;
-  scheme?: "primary" | "secondary";
+  scheme?: "primary" | "secondary" | "tertiary";
 }
 
 export const Title = ({
@@ -20,7 +20,9 @@ export const Title = ({
       <Component
         className={clsx(
           "uppercase font-black text-6xl",
-          scheme === "primary" ? "text-white" : "text-primary",
+          scheme === "primary" && "text-white",
+          scheme === "secondary" && "text-primary",
+          scheme === "tertiary" && "text-black",
           className
         )}
         {...props}
