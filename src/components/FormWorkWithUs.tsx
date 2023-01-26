@@ -146,6 +146,17 @@ export const FormWorkWithUs = () => {
     setPhoneValue((prev) => maskPhone(prev));
   }, [phoneValue]);
 
+  useEffect(() => {
+    if (file?.size && file.size > 2097152) {
+      handleClickSnackbarVariant(
+        "Não é possível enviar arquivos de 2MB",
+        "warning"
+      );
+      setFile(undefined);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [file]);
+
   return (
     <>
       <Container>

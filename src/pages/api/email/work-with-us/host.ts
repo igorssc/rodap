@@ -48,8 +48,8 @@ interface RequestRouter extends NextApiRequest {
   };
 }
 
-const oneMegabyteInBytes = 1000000;
-const outputFolderName = "./temp";
+const oneMegabyteInBytes = 1048576;
+const outputFolderName = "./tmp";
 
 const upload = multer({
   limits: { fileSize: oneMegabyteInBytes * 2 },
