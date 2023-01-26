@@ -48,7 +48,6 @@ export const FormWorkWithUs = () => {
       phone: phoneValue.trim(),
       unit: unitValue,
       category: categoryValue,
-      file,
     };
 
     if (body.name.split(" ").length < 2) {
@@ -92,7 +91,7 @@ export const FormWorkWithUs = () => {
       document.getElementById("form-category")?.focus();
       return;
     }
-    if (!body.file) {
+    if (!file) {
       handleClickSnackbarVariant(
         "Insira um arquivo com seu currículo, por favor",
         "warning"
@@ -105,20 +104,28 @@ export const FormWorkWithUs = () => {
 
     try {
       const formData = new FormData();
-      formData.append("name", body.name);
-      formData.append("email", body.email);
-      formData.append("phone", body.phone);
-      formData.append("unit", body.unit);
-      formData.append("category", body.category);
-      formData.append("file", body.file ?? "");
+      formData.append("file", file ?? "");
 
-      const response = await fetch("/api/email/work-with-us/host", {
+      const uploadResponse = await fetch("/api/aws/upload", {
         method: "POST",
         body: formData,
       });
-      const data = await response.json();
 
-      if (response.status === 200 && data.accepted) {
+      const uploadData: { file: { key: string; location: string } } =
+        await uploadResponse.json();
+
+      if (uploadResponse.status !== 201) {
+        throw new Error();
+      }
+
+      const SendEmailResponse = await fetch("/api/email/work-with-us/host", {
+        method: "POST",
+        body: JSON.stringify(Object.assign(body, { file: uploadData.file })),
+      });
+
+      const sendEmailData = await SendEmailResponse.json();
+
+      if (SendEmailResponse.status === 200 && sendEmailData.accepted) {
         handleClickSnackbarVariant("Mensagem enviada com sucesso!", "success");
         setNameValue("");
         setEmailValue("");
@@ -130,7 +137,14 @@ export const FormWorkWithUs = () => {
 
         await fetch("/api/email/work-with-us/client", {
           method: "POST",
-          body: formData,
+          body: JSON.stringify(Object.assign(body, { file: uploadData.file })),
+        });
+
+        await fetch("/api/aws/delete", {
+          method: "POST",
+          body: JSON.stringify(
+            Object.assign({ file: { key: uploadData.file.key } })
+          ),
         });
       } else {
         throw new Error();

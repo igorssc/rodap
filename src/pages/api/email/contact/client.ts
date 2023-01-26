@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import nodemailer from "nodemailer";
+import { transporter } from "../../../../services/transporter";
 
 type DataProps = {
   name: string;
@@ -10,19 +10,6 @@ type DataProps = {
 };
 
 const sendEmailHost = async (req: NextApiRequest, res: NextApiResponse) => {
-  const transporter = nodemailer.createTransport({
-    host: process.env.HOSTMAIL,
-    port: 587,
-    auth: {
-      user: process.env.USERMAIL,
-      pass: process.env.PASSMAIL,
-    },
-    tls: {
-      rejectUnauthorized: false,
-      ciphers: "SSLv3",
-    },
-  });
-
   const data: DataProps =
     typeof req.body === "string" ? JSON.parse(req.body) : req.body;
 
