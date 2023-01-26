@@ -28,8 +28,6 @@ export const apiRoute = nextConnect({
     req: NextConnectApiRequest,
     res: NextApiResponse<ResponseData>
   ) {
-    console.log(error);
-
     res
       .status(501)
       .json({ error: `Sorry something Happened! ${error.message}` });
