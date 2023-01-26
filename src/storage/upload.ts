@@ -8,7 +8,7 @@ const outputFolderName = "./tmp";
 export const upload = multer({
   storage: multerS3({
     s3: s3Client,
-    bucket: process.env.AWS_BUCKET_NAME || "",
+    bucket: process.env.AWS_BUCKET || "",
     key: function (req, file, cb) {
       cb(null, "tmp/" + Date.now().toString());
     },
