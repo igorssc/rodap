@@ -40,12 +40,19 @@ export const Input = ({
               className
             )}
             {...(props.type !== "file" && { value: value })}
+            {...(props.type === "file" && !value && { value: "" })}
             onChange={changeValue}
             {...props}
+            {...(props.type === "file" && { id: "" })}
           />
 
           {props.type === "file" && (
-            <div className="bg-[#F1F1F1] text-[#858585] w-full rounded h-9 px-4 flex gap-3 items-center">
+            <div className="bg-[#F1F1F1] text-[#858585] w-full rounded h-9 px-4 flex gap-3 items-center focus-within:outline focus-within:outline-[2px]">
+              <input
+                type="text"
+                className="w-0 h-0 absolute bg-transparent"
+                id={props.id}
+              />
               <UploadSimple size={20} weight="bold" />
               {value ? value.name : "Enviar arquivo"}
             </div>

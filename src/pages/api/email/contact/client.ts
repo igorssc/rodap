@@ -5,7 +5,7 @@ type DataProps = {
   name: string;
   email: string;
   phone?: string;
-  subject: string;
+  category: string;
   message: string;
 };
 
@@ -34,7 +34,7 @@ const sendEmailHost = async (req: NextApiRequest, res: NextApiResponse) => {
     !(
       "name" in data &&
       "email" in data &&
-      "subject" in data &&
+      "category" in data &&
       "message" in data
     ) ||
     data.message.length < 5
@@ -51,7 +51,7 @@ const sendEmailHost = async (req: NextApiRequest, res: NextApiResponse) => {
   <div
     style="
       padding: 20px;
-      background: #199ada;
+      background: #83060E;
       color: #fff;
       line-height: 2rem
     "
@@ -67,7 +67,7 @@ const sendEmailHost = async (req: NextApiRequest, res: NextApiResponse) => {
           : ""
       }
       <br />
-      <strong>Assunto: </strong>${data.subject}
+      <strong>Assunto: </strong>${data.category}
       <br />
       <br />
       ${data.message.replaceAll("\n", "<br/>")}
@@ -80,8 +80,8 @@ const sendEmailHost = async (req: NextApiRequest, res: NextApiResponse) => {
       text-decoration: none;
     "
   >
-    <a href="https://www.igsdesign.com.br" target="_blank" style="text-decoration: none; color: inherit">
-    <strong>IGS DESIGN</strong> - www.igsdesign.com.br
+    <a href="https://www.rodap.com.br" target="_blank" style="text-decoration: none; color: inherit">
+    <strong>RODAP</strong> - www.rodap.com.br
     </a>
   </div>
     `;
@@ -91,7 +91,7 @@ const sendEmailHost = async (req: NextApiRequest, res: NextApiResponse) => {
       from: `Formulário Web <${process.env.USERMAIL}>`,
       to: data.email,
       replyTo: process.env.USERMAIL,
-      subject: `Confirmação de contato ${data.subject}`,
+      subject: `Confirmação de contato - ${data.category}`,
       text: "Olá, recebemos sua mensagem, pedimos que aguarde até que nossa equipe possa visualizar e respondê-la",
       html: emailBody,
     });

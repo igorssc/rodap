@@ -64,7 +64,7 @@ export const Gallery = ({ items }: GalleryProps) => {
               data-pswp-height={864}
               target="_blank"
               rel="noreferrer"
-              className="flex relative rounded cursor-pointer border-4 border-white m-auto w-full hover:scale-105 transition-all"
+              className="flex relative rounded cursor-pointer border-4 border-white m-auto w-full hover:scale-[1.02] transition-all"
               style={{ height: dimensionItem.height }}
             >
               <Image

@@ -29,3 +29,10 @@ export const maskPhone = (value: string) => {
 
   return currentValue;
 };
+
+export const especialCharMask = (especialChar: string) => {
+  especialChar = especialChar.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  especialChar = especialChar.replace(/[^a-zA-Z0-9 -]/g, "");
+  especialChar = especialChar.replace(/\s+/g, "-");
+  return especialChar;
+};

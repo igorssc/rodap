@@ -7,22 +7,29 @@ import { Button } from "./Button";
 import { Container } from "./Container";
 import { Input } from "./Input";
 import { Select } from "./Select";
-import { TextArea } from "./TextArea";
 
-export const FormContact = () => {
+export const FormWorkWithUs = () => {
+  const unitsOptions = [
+    "Unidade São Benedito",
+    "Unidade Vila Olga",
+    "Unidade Justinópolis",
+    "Unidade Venda Nova",
+  ];
   const categoriesOptions = [
-    "Dúvida",
-    "Elogio",
-    "Reclamação",
-    "Sugestão",
+    "Motorista",
+    "Cobrador",
+    "Administrativo",
+    "Manutenção",
+    "Serviços Gerais",
     "Outros",
   ];
 
   const [nameValue, setNameValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
+  const [unitValue, setUnitValue] = useState("");
   const [categoryValue, setCategoryValue] = useState("");
-  const [messageValue, setMessageValue] = useState("");
+  const [file, setFile] = useState<File>();
 
   const { handleOpen: handleOpenBackdrop, handleClose: handleCloseBackdrop } =
     useBackdrop();
@@ -39,8 +46,9 @@ export const FormContact = () => {
       name: nameValue.trim(),
       email: emailValue.trim().toLowerCase(),
       phone: phoneValue.trim(),
+      unit: unitValue,
       category: categoryValue,
-      message: messageValue.trim(),
+      file,
     };
 
     if (body.name.split(" ").length < 2) {
@@ -71,43 +79,58 @@ export const FormContact = () => {
       document.getElementById("form-phone")?.focus();
       return;
     }
+    if (!body.unit) {
+      handleClickSnackbarVariant("Selecione uma unidade, por favor", "warning");
+      document.getElementById("form-unit")?.focus();
+      return;
+    }
     if (!body.category) {
-      handleClickSnackbarVariant("Selecione um assunto, por favor", "warning");
+      handleClickSnackbarVariant(
+        "Selecione uma categoria, por favor",
+        "warning"
+      );
       document.getElementById("form-category")?.focus();
       return;
     }
-    if (body.message.length < 10) {
+    if (!body.file) {
       handleClickSnackbarVariant(
-        "Sua mensagem deve conter ao menos 10 caracteres",
+        "Insira um arquivo com seu currículo, por favor",
         "warning"
       );
-      document.getElementById("form-message")?.focus();
+      document.getElementById("form-file")?.focus();
       return;
     }
 
     handleOpenBackdrop();
 
     try {
-      const response = await fetch("/api/email/contact/host", {
+      const formData = new FormData();
+      formData.append("name", body.name);
+      formData.append("email", body.email);
+      formData.append("phone", body.phone);
+      formData.append("unit", body.unit);
+      formData.append("category", body.category);
+      formData.append("file", body.file ?? "");
+
+      const response = await fetch("/api/email/work-with-us/host", {
         method: "POST",
-        body: JSON.stringify(body),
+        body: formData,
       });
       const data = await response.json();
 
       if (response.status === 200 && data.accepted) {
-        const bodyTemporary = JSON.stringify(body);
-
         handleClickSnackbarVariant("Mensagem enviada com sucesso!", "success");
         setNameValue("");
         setEmailValue("");
         setPhoneValue("");
         setCategoryValue("");
-        setMessageValue("");
+        setUnitValue("");
+        setFile(undefined);
         handleCloseBackdrop();
 
-        await fetch("/api/email/contact/client", {
+        await fetch("/api/email/work-with-us/client", {
           method: "POST",
-          body: bodyTemporary,
+          body: formData,
         });
       } else {
         throw new Error();
@@ -127,11 +150,11 @@ export const FormContact = () => {
     <>
       <Container>
         <form
-          className="my-16 flex flex-col gap-4"
           onSubmit={(e) => {
             e.preventDefault();
             sendEmail();
           }}
+          className="my-16 flex flex-col gap-4"
         >
           <Input
             label="Nome completo"
@@ -153,6 +176,15 @@ export const FormContact = () => {
             setValue={setPhoneValue}
             id="form-phone"
           />
+          <div className="relative z-20">
+            <Select
+              label="Unidade"
+              options={unitsOptions}
+              value={unitValue}
+              setValue={setUnitValue}
+              id="form-unit"
+            />
+          </div>
           <div className="relative z-10">
             <Select
               label="Categoria"
@@ -162,13 +194,16 @@ export const FormContact = () => {
               id="form-category"
             />
           </div>
-          <TextArea
-            label="Mensagem"
-            rows={10}
-            value={messageValue}
-            setValue={setMessageValue}
-            id="form-message"
+          <Input
+            label="Currículo"
+            type="file"
+            accept="application/pdf"
+            legend="Somente arquivos .PDF com tamanho máximo de 2MB"
+            value={file}
+            setValue={setFile}
+            id="form-file"
           />
+
           <Zoom>
             <div className="w-full">
               <Button className="w-96 mx-auto mt-8 block">Enviar</Button>

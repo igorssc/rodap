@@ -7,9 +7,16 @@ interface SelectProps {
   options: string[];
   value: string;
   setValue: Dispatch<SetStateAction<string>>;
+  id?: string;
 }
 
-export const Select = ({ label, options, value, setValue }: SelectProps) => {
+export const Select = ({
+  label,
+  options,
+  value,
+  setValue,
+  id = "",
+}: SelectProps) => {
   return (
     <>
       <Zoom>
@@ -18,7 +25,10 @@ export const Select = ({ label, options, value, setValue }: SelectProps) => {
             {label && (
               <Listbox.Label className="text-sm">{label}</Listbox.Label>
             )}
-            <Listbox.Button className="relative w-full cursor-default rounded-lg bg-[#F1F1F1] py-2 pl-3 pr-10 text-left focus:outline text-sm">
+            <Listbox.Button
+              className="relative w-full cursor-default rounded-lg bg-[#F1F1F1] py-2 pl-3 pr-10 text-left focus:outline focus:outline-[2px] text-sm"
+              id={id}
+            >
               <span className="block truncate">{value || "Selecione"}</span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex flex-col justify-center items-center pr-2">
                 <CaretUp />
