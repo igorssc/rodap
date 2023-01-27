@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 export const ScrollTopButton = () => {
   const top = 20;
   const [visible, setVisible] = useState(false);
+
   const onScroll = () => {
     setVisible(document.documentElement.scrollTop > top);
   };
+
   useEffect(() => {
     document.addEventListener("scroll", onScroll);
     return () => document.removeEventListener("scroll", onScroll);

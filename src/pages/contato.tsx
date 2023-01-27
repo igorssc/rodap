@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 import { Banner } from "../components/Banner";
 import { Container } from "../components/Container";
 import { FormContact } from "../components/FormContact";
+import { Map } from "../components/Map";
 import { Title } from "../components/Title";
 
 export default function Contato() {
@@ -23,6 +24,10 @@ export default function Contato() {
       </Banner>
 
       <FormContact />
+
+      <Container className="my-16">
+        <Map />
+      </Container>
     </>
   );
 }
