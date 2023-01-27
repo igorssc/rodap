@@ -32,12 +32,12 @@ export default function Home() {
         <div className="col-span-3 gap-8 flex flex-col justify-between">
           <Fade appear cascade>
             <Box className="lg:shadow-none">
-              <div className="flex flex-col md:grid md:grid-cols-2 gap-4 [&_.summary]:px-4 [&_.summary]:pb-4 lg:[&_.summary]:px-0 lg:[&_.summary]:pb-0">
+              <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-lg:[&_.summary]:px-4 max-lg:[&_.summary]:pb-4">
                 <FeaturedPost />
               </div>
             </Box>
             <Box className="lg:shadow-none">
-              <div className="flex flex-col md:grid md:grid-cols-2 gap-4 [&_.summary]:px-4 [&_.summary]:pb-4 lg:[&_.summary]:px-0 lg:[&_.summary]:pb-0">
+              <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-lg:[&_.summary]:px-4 max-lg:[&_.summary]:pb-4">
                 <FeaturedPost />
               </div>
             </Box>

@@ -4,7 +4,7 @@ import { Banner } from "./Banner";
 export const Footer = () => {
   return (
     <>
-      <Banner className="py-7 flex flex-col gap-5">
+      <Banner className="py-7 flex flex-col gap-3 sm:gap-5 max-sm:text-xs">
         <span className="block text-center font-bold">
           Rua Ana Batista da Cruz, nº 850, Belo Vale - Santa Luzia/MG
         </span>

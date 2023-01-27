@@ -1,7 +1,9 @@
 import Head from "next/head";
+import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import { Banner } from "../components/Banner";
+import { Box } from "../components/Box";
 import { Button } from "../components/Button";
 import { Container } from "../components/Container";
 import { FeaturedPost } from "../components/FeaturedPost";
@@ -17,15 +19,21 @@ export default function Blog() {
       <Banner>
         <Container>
           <Fade appear>
-            <Title className="!text-4xl text-center">Blog</Title>
+            <Title className="!text-xl sm:!text-2xl md:!text-3xl lg:!text-4xl text-center">
+              Blog
+            </Title>
           </Fade>
         </Container>
       </Banner>
 
-      <Container className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 my-16">
+      <Container className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 my-8 lg:my-16">
         {Array.from({ length: 12 }, (_, index) => (
           <Zoom key={index}>
-            <FeaturedPost />
+            <Link href="#">
+              <Box className="[&_.summary]:p-4">
+                <FeaturedPost />
+              </Box>
+            </Link>
           </Zoom>
         ))}
       </Container>

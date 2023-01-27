@@ -20,13 +20,15 @@ export default function Horarios() {
       <Banner>
         <Container>
           <Fade appear>
-            <Title className="!text-4xl text-center">Quadro de Horários</Title>
+            <Title className="!text-xl sm:!text-2xl md:!text-3xl lg:!text-4xl text-center">
+              Quadro de Horários
+            </Title>
           </Fade>
         </Container>
       </Banner>
 
-      <Container className="my-16 flex flex-col gap-4">
-        <div className="grid grid-cols-2 gap-16 items-center justify-center">
+      <Container className="my-8 lg:my-16 flex flex-col gap-4">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center justify-center overflow-hidden">
           {[
             {
               name: "Linhas Metropolitanas",
@@ -56,7 +58,7 @@ export default function Horarios() {
               >
                 <div className="bg-black/50 absolute inset-0"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Title className="!text-4xl w-full text-center whitespace-nowrap">
+                  <Title className="!text-xl sm:!text-2xl md:!text-3xl w-full text-center px-4">
                     {v.name}
                   </Title>
                 </div>
@@ -65,7 +67,7 @@ export default function Horarios() {
                   alt={v.name}
                   width={403}
                   height={203}
-                  className="w-full h-auto"
+                  className="w-auto h-52 object-cover md:w-full md:h-auto"
                 />
               </Link>
             </Fade>

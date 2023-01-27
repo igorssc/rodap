@@ -50,7 +50,7 @@ export const Gallery = ({ items }: GalleryProps) => {
     <>
       <div
         id="gallery"
-        className="grid gap-3 justify-center items-center grid-cols-2 lg:grid-cols-4 lg:gap-6 w-full"
+        className="grid gap-1 sm:gap-3 justify-center items-center grid-cols-2 lg:grid-cols-4 lg:gap-6 w-full"
       >
         {items.map((item, index) => (
           <Fade appear cascade key={"gallery" + "-" + index}>

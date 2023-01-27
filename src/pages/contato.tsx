@@ -15,7 +15,9 @@ export default function Contato() {
       <Banner>
         <Container>
           <Fade appear>
-            <Title className="!text-4xl text-center">Contato</Title>
+            <Title className="!text-xl sm:!text-2xl md:!text-3xl lg:!text-4xl text-center">
+              Contato
+            </Title>
           </Fade>
         </Container>
       </Banner>

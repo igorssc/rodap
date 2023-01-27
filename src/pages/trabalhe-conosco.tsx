@@ -15,7 +15,9 @@ export default function WorkWithUs() {
       <Banner>
         <Container>
           <Fade appear>
-            <Title className="!text-4xl text-center">Trabalhe conosco</Title>
+            <Title className="!text-xl sm:!text-2xl md:!text-3xl lg:!text-4xl text-center">
+              Trabalhe conosco
+            </Title>
           </Fade>
         </Container>
       </Banner>

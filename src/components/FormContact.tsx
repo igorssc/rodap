@@ -127,7 +127,7 @@ export const FormContact = () => {
     <>
       <Container>
         <form
-          className="my-16 flex flex-col gap-4"
+          className="my-8 lg:my-16 flex flex-col gap-4"
           onSubmit={(e) => {
             e.preventDefault();
             sendEmail();

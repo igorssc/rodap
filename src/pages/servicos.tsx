@@ -16,14 +16,16 @@ export default function Servicos() {
       <Banner>
         <Container>
           <Fade appear>
-            <Title className="!text-4xl text-center">Serviços</Title>
+            <Title className="!text-xl sm:!text-2xl md:!text-3xl lg:!text-4xl text-center">
+              Serviços
+            </Title>
           </Fade>
         </Container>
       </Banner>
 
-      <Container className="my-16 flex flex-col gap-8">
+      <Container className="my-8 lg:my-16 flex flex-col gap-8">
         <Fade cascade left>
-          <Title asChild scheme="tertiary" className="!text-2xl">
+          <Title asChild scheme="tertiary" className="!text-xl sm:!text-2xl">
             <h2>Encomendas</h2>
           </Title>
           <p className="text-justify">
@@ -36,19 +38,23 @@ export default function Servicos() {
           </p>
 
           <Link href="tel:(31) 3486-6644">
-            <div className="flex gap-8">
+            <div className="flex gap-4 sm:gap-8">
               <Phone className="text-2xl" weight="light" />
               <span>(31) 3486-6644</span>
             </div>
           </Link>
           <Link href="mailto:encomendas@rodap.com.br">
-            <div className="flex gap-8">
+            <div className="flex gap-4 sm:gap-8">
               <Envelope className="text-2xl" weight="light" />
               <span>encomendas@rodap.com.br</span>
             </div>
           </Link>
 
-          <Title asChild scheme="tertiary" className="!text-2xl mt-8">
+          <Title
+            asChild
+            scheme="tertiary"
+            className="!text-xl sm:!text-2xl mt-4 sm:mt-8"
+          >
             <h2>Fretamento</h2>
           </Title>
           <p className="text-justify">
@@ -63,34 +69,38 @@ export default function Servicos() {
           </p>
 
           <Link href="tel:(31) 3517-7601">
-            <div className="flex gap-8">
+            <div className="flex gap-4 sm:gap-8">
               <Phone className="text-2xl" weight="light" />
               <span>(31) 3517-7601</span>
             </div>
           </Link>
           <Link href="tel:(31) 9 9120-7600">
-            <div className="flex gap-8">
+            <div className="flex gap-4 sm:gap-8">
               <WhatsappLogo className="text-2xl" weight="light" />
               <span>(31) 9 9120-7600</span>
             </div>
           </Link>
           <Link href="mailto:encomendas@rodap.com.br">
-            <div className="flex gap-8">
+            <div className="flex gap-4 sm:gap-8">
               <Envelope className="text-2xl" weight="light" />
               <span>encomendas@rodap.com.br</span>
             </div>
           </Link>
           <Link href="https://slfretamento.com.br" target="_blank">
-            <div className="flex gap-8">
+            <div className="flex gap-4 sm:gap-8">
               <Globe className="text-2xl" weight="light" />
               <span>https://slfretamento.com.br</span>
             </div>
           </Link>
 
-          <Title asChild scheme="tertiary" className="!text-2xl mt-8">
+          <Title
+            asChild
+            scheme="tertiary"
+            className="!text-xl sm:!text-2xl mt-4 sm:mt-8"
+          >
             <h2>Recarga Vale Transporte Elêtronico</h2>
           </Title>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 text-justify">
             <p>
               Os cartões BHBus e Ótimo trouxeram um novo conceito para o
               transporte coletivo em Belo Horizonte e na Região Metropolitana,

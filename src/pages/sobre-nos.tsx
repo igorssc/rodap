@@ -21,7 +21,9 @@ export default function Sobre() {
       <Banner>
         <Container>
           <Fade appear>
-            <Title className="!text-4xl text-center">Nossa história</Title>
+            <Title className="!text-xl sm:!text-2xl md:!text-3xl lg:!text-4xl text-center">
+              Nossa história
+            </Title>
           </Fade>
         </Container>
       </Banner>
@@ -33,7 +35,7 @@ export default function Sobre() {
             width={1280}
             height={489}
             alt="featured photo of the page"
-            className="w-full h-auto my-16"
+            className="w-full h-auto my-8 lg:my-16"
           />
         </Fade>
 
@@ -65,7 +67,7 @@ export default function Sobre() {
           </p>
         </Fade>
 
-        <div className="w-full grid grid-cols-5 my-16 gap-10">
+        <div className="w-full flex flex-wrap justify-center md:grid md:grid-cols-5 my-8 lg:my-16 gap-4 md:gap-10">
           <>
             {[
               "Belo Horizonte",
@@ -75,7 +77,7 @@ export default function Sobre() {
               "Justinópolis",
             ].map((v, i) => (
               <Fade key={i} bottom>
-                <div className="text-center bg-primary py-5 text-white">
+                <div className="text-center bg-primary py-5 text-white max-md:px-6">
                   <span className="block font-medium">Unidade</span>
                   <span>{v}</span>
                 </div>
@@ -107,7 +109,7 @@ export default function Sobre() {
           </p>
         </Fade>
 
-        <div className="my-16 flex flex-col gap-8">
+        <div className="my-8 lg:my-16 flex flex-col gap-8">
           {[
             {
               name: "Unidade Belo Horizonte",
@@ -150,15 +152,19 @@ export default function Sobre() {
             },
           ].map((v, i) => (
             <Fade key={i} left>
-              <div className="bg-gray-200 flex">
+              <div className="bg-gray-200 flex max-md:flex-col">
                 <Image
                   src={v.img.src}
                   alt={`Featured photo from ${v.name}`}
                   width={640}
                   height={417}
+                  className="w-auto object-cover"
                 />
-                <div className="flex flex-col items-center justify-center gap-16 px-16">
-                  <Title scheme="secondary" className="!text-3xl">
+                <div className="flex flex-col md:items-center md:justify-center gap-8 px-4 sm:px-8 lg:px-16 py-4 md:py-8">
+                  <Title
+                    scheme="secondary"
+                    className="!text-xl sm:!text-2xl md:!text-3xl"
+                  >
                     {v.name}
                   </Title>
                   <div className="flex flex-col gap-6">

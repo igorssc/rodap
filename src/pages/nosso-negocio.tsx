@@ -19,13 +19,15 @@ export default function NossoNegocio() {
       <Banner>
         <Container>
           <Fade appear>
-            <Title className="!text-4xl text-center">Nosso Negócio</Title>
+            <Title className="!text-xl sm:!text-2xl md:!text-3xl lg:!text-4xl text-center">
+              Nosso Negócio
+            </Title>
           </Fade>
         </Container>
       </Banner>
 
-      <Container className="my-16 flex flex-col gap-4">
-        <div className="flex items-center justify-center gap-16">
+      <Container className="my-8 lg:my-16 flex flex-col gap-4">
+        <div className="flex max-lg:flex-col items-center justify-center gap-8 lg:gap-16">
           <Zoom bottom>
             <PuzzlePiecesImg className="" />
           </Zoom>
@@ -50,7 +52,7 @@ export default function NossoNegocio() {
         </div>
 
         <Fade bottom>
-          <p className="my-16 !font-normal !normal-case italic !text-primary text-center">
+          <p className="my-4 sm:my-8 lg:my-16 !font-normal !normal-case italic !text-primary text-justify lg:text-center">
             &ldquo;Transportar pessoas com carinho, pontualidade e segurança é
             nossa missão. Garantir que cada viagem seja uma experiência
             agradável e segura é a nossa prioridade. Estamos sempre buscando a
@@ -61,7 +63,7 @@ export default function NossoNegocio() {
           </p>
         </Fade>
 
-        <div className="grid grid-cols-3 items-start gap-8">
+        <div className="grid md:grid-cols-3 items-start gap-8">
           <div className="flex items-center justify-center gap-8 flex-col">
             <Zoom>
               <TargetImg />
