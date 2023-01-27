@@ -25,7 +25,7 @@ export default function Contato() {
 
       <FormContact />
 
-      <Container className="my-16">
+      <Container className="my-12">
         <Map />
       </Container>
     </>

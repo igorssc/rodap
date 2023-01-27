@@ -37,8 +37,8 @@ export function BackdropProvider({ children }: BackdropProviderProps) {
     >
       <Backdrop
         open={open}
-        style={{ zIndex: 9999 }}
-        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        style={{ zIndex: 9999999999 }}
+        sx={{ color: "#fff" }}
       >
         <CircularProgress color="inherit" />
       </Backdrop>

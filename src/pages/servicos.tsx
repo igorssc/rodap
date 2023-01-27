@@ -78,7 +78,7 @@ export default function Servicos() {
               <span>(31) 3517-7601</span>
             </div>
           </Link>
-          <Link href="tel:(31) 9 9120-7600">
+          <Link href="https://api.whatsapp.com/send?phone=5531991207600">
             <div className="flex gap-4 sm:gap-8">
               <WhatsappLogo className="text-2xl" weight="light" />
               <span>(31) 9 9120-7600</span>

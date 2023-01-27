@@ -34,6 +34,7 @@ export default function Horarios() {
               name: "Linhas Metropolitanas",
               img: metropolitanasImg,
               href: "http://www.consultas.der.mg.gov.br/grgx/sgtm/consulta_linha.xhtml",
+              target: "_blank",
             },
             {
               name: "Linhas Ribeirão das Neves",
@@ -44,6 +45,7 @@ export default function Horarios() {
               name: "Linhas Urbanas BH",
               img: urbanasBHImg,
               href: "https://portalbhtrans.pbh.gov.br/quadrodehorario",
+              target: "_blank",
             },
             {
               name: "Linhas Urbanas Santa Luzia",
@@ -55,6 +57,7 @@ export default function Horarios() {
               <Link
                 className="relative overflow-hidden hover:scale-[1.02] transition-all"
                 href={v.href}
+                {...(v.target && { target: v.target })}
               >
                 <div className="bg-black/50 absolute inset-0"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
