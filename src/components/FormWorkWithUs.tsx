@@ -163,7 +163,15 @@ export const FormWorkWithUs = () => {
   useEffect(() => {
     if (file?.size && file.size > 2097152) {
       handleClickSnackbarVariant(
-        "Não é possível enviar arquivos de 2MB",
+        "Não é possível enviar arquivos maiores que 2MB",
+        "warning"
+      );
+      setFile(undefined);
+      return;
+    }
+    if (file?.type && file.type !== "application/pdf") {
+      handleClickSnackbarVariant(
+        "Por favor, envie um arquivo em PDF",
         "warning"
       );
       setFile(undefined);

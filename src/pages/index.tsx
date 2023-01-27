@@ -190,8 +190,8 @@ export default function Home() {
           <Image src={isoImg} width={100} height={87} alt="ISO 9001" />
           <div>
             <p className="text-justify lg:text-center">
-              A empresa Grupo Rodap se orgulha de possuir o selo ISO 9001, que é
-              um reconhecimento internacionalmente reconhecido de que a empresa
+              O Grupo Rodap se orgulha de possuir o selo ISO 9001, que é um
+              reconhecimento internacionalmente reconhecido de que a empresa
               possui uma gestão de qualidade sólida e eficaz. Este selo é
               concedido após uma avaliação rigorosa dos processos internos da
               empresa e demonstra nossa dedicação em atender aos mais altos
