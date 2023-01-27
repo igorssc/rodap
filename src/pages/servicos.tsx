@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { Envelope, Globe, Phone, WhatsappLogo } from "phosphor-react";
 import Fade from "react-reveal/Fade";
@@ -8,6 +9,10 @@ import { Title } from "../components/Title";
 export default function Servicos() {
   return (
     <>
+      <Head>
+        <title>Rodap - Serviços</title>
+      </Head>
+
       <Banner>
         <Container>
           <Fade appear>

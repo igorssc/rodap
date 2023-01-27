@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import { Banner } from "../components/Banner";
@@ -9,6 +10,10 @@ import { Title } from "../components/Title";
 export default function Blog() {
   return (
     <>
+      <Head>
+        <title>Rodap - Blog</title>
+      </Head>
+
       <Banner>
         <Container>
           <Fade appear>

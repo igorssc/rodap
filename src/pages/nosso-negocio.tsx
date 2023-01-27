@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import LampImg from "../assets/lamp.svg";
@@ -11,6 +12,10 @@ import { Title } from "../components/Title";
 export default function NossoNegocio() {
   return (
     <>
+      <Head>
+        <title>Rodap - Nosso negócio</title>
+      </Head>
+
       <Banner>
         <Container>
           <Fade appear>

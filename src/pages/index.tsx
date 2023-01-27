@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 
 import Fade from "react-reveal/Fade";
@@ -13,6 +14,10 @@ import { Title } from "../components/Title";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Rodap</title>
+      </Head>
+
       <Header />
 
       <Banner>

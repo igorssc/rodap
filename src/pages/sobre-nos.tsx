@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
 import featuredImg from "../assets/about-us-page-featured.png";
@@ -13,6 +14,10 @@ import { Title } from "../components/Title";
 export default function Sobre() {
   return (
     <>
+      <Head>
+        <title>Rodap - Sobre nós</title>
+      </Head>
+
       <Banner>
         <Container>
           <Fade appear>

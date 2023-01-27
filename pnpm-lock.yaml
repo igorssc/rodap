@@ -7,7 +7,6 @@ specifiers:
   '@headlessui/react': ^1.7.5
   '@mui/material': ^5.11.6
   '@radix-ui/react-slot': ^1.0.1
-  '@react-hook/event': ^1.2.6
   '@svgr/webpack': ^6.5.1
   '@types/multer': ^1.4.7
   '@types/multer-s3': ^3.0.0
@@ -42,7 +41,6 @@ dependencies:
   '@headlessui/react': 1.7.7_biqbaboplfbrettd7655fr4n2y
   '@mui/material': 5.11.6_thp4wrxo45nyllusrnt46mid4u
   '@radix-ui/react-slot': 1.0.1_react@18.2.0
-  '@react-hook/event': 1.2.6_react@18.2.0
   '@svgr/webpack': 6.5.1
   clsx: 1.2.1
   multer: 1.4.5-lts.1
@@ -2779,14 +2777,6 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.13
       '@radix-ui/react-compose-refs': 1.0.0_react@18.2.0
-      react: 18.2.0
-    dev: false
-
-  /@react-hook/event/1.2.6_react@18.2.0:
-    resolution: {integrity: sha512-JUL5IluaOdn5w5Afpe/puPa1rj8X6udMlQ9dt4hvMuKmTrBS1Ya6sb4sVgvfe2eU4yDuOfAhik8xhbcCekbg9Q==}
-    peerDependencies:
-      react: '>=16.8'
-    dependencies:
       react: 18.2.0
     dev: false
 

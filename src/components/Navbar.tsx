@@ -1,10 +1,9 @@
-import useEvent from "@react-hook/event";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { List, X } from "phosphor-react";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import logoWhiteImg from "../assets/logo-branca.png";
 import logoImg from "../assets/logo.png";
 
@@ -13,6 +12,7 @@ interface NavbarComponentProps {
 }
 
 const NavbarComponent = ({ children }: NavbarComponentProps) => {
+  const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
   const [isMobile, setIsMobile] = useState(false);
@@ -35,25 +35,38 @@ const NavbarComponent = ({ children }: NavbarComponentProps) => {
   const handleWindowResize = () => {
     const windowWidth = document.querySelector("html")?.clientWidth || 0;
 
-    if (windowWidth < 768 && !isMobile) {
+    if (windowWidth < 768) {
       setIsMobile(true);
     }
-    if (windowWidth > 768 && isMobile) {
+    if (windowWidth >= 768) {
       setIsMobile(false);
     }
   };
 
-  useEvent(window, "resize", (event) => handleWindowResize());
+  useEffect(() => {
+    handleWindowResize();
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
     <>
-      <div className="fixed z-[99998] top-0 inset-x-0 md:static bg-primary border-b-2 border-white md:border-0 md:bg-transparent flex flex-row items-center justify-between py-3 px-5 md:px-0 md:py-14">
-        <Image
-          src={isMobile ? logoWhiteImg : logoImg}
-          alt="Logo from Rodap"
-          priority
-          className="h-7 md:h-10 w-auto"
-        />
+      <div
+        className="fixed z-[99998] top-0 inset-x-0 md:static bg-primary border-b-2 border-white md:border-0 md:bg-transparent flex flex-row items-center justify-between py-3 px-5 md:px-0 md:py-14"
+        ref={ref}
+      >
+        <Link href="/">
+          <Image
+            src={isMobile ? logoWhiteImg : logoImg}
+            alt="Logo from Rodap"
+            priority
+            className="h-7 md:h-10 w-auto"
+          />
+        </Link>
         <ul className="flex-row gap-4 items-center justify-center hidden md:flex">
           {children}
         </ul>
