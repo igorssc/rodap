@@ -4,6 +4,7 @@ import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import { Banner } from "../components/Banner";
+import { Box } from "../components/Box";
 import { Button } from "../components/Button";
 import { Container } from "../components/Container";
 import { FeaturedPost } from "../components/FeaturedPost";
@@ -22,42 +23,54 @@ export default function Home() {
 
       <Banner>
         <Container>
-          <Title className="!text-3xl text-center">ÚLTIMAS POSTAGENS</Title>
+          <Title className="!text-xl sm:!text-2xl md:!text-3xl text-center">
+            ÚLTIMAS POSTAGENS
+          </Title>
         </Container>
       </Banner>
-      <Container className="grid grid-cols-5 gap-10 justify-center mt-16">
-        <div className="col-span-3 flex flex-col justify-between">
+      <Container className="flex flex-col lg:grid lg:grid-cols-5 gap-8 lg:gap-10 justify-center mt-8 lg:mt-16">
+        <div className="col-span-3 gap-8 flex flex-col justify-between">
           <Fade appear cascade>
-            <div className="grid grid-cols-2 gap-4">
-              <FeaturedPost />
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <FeaturedPost />
-            </div>
+            <Box className="lg:shadow-none">
+              <div className="flex flex-col md:grid md:grid-cols-2 gap-4 [&_.summary]:px-4 [&_.summary]:pb-4 lg:[&_.summary]:px-0 lg:[&_.summary]:pb-0">
+                <FeaturedPost />
+              </div>
+            </Box>
+            <Box className="lg:shadow-none">
+              <div className="flex flex-col md:grid md:grid-cols-2 gap-4 [&_.summary]:px-4 [&_.summary]:pb-4 lg:[&_.summary]:px-0 lg:[&_.summary]:pb-0">
+                <FeaturedPost />
+              </div>
+            </Box>
           </Fade>
         </div>
-        <div className="col-span-2 flex flex-col gap-3">
+        <div className="lg:col-span-2 grid sm:grid-cols-2 lg:flex lg:flex-col gap-8 min-[300px]:gap-3">
           {Array.from({ length: 5 }, (_, index) => (
             <Fade appear key={index}>
-              <div className="grid grid-cols-3 gap-5 items-center [&_.summary]:col-span-2">
-                <FeaturedPost isSummary />
-              </div>
+              <Box className="lg:shadow-none">
+                <div className="grid min-[300px]:grid-cols-3 gap-5 items-center min-[300px]:[&_.summary]:col-span-2 max-[300px]:[&_.summary]:px-4 max-[300px]:[&_.summary]:pb-4">
+                  <FeaturedPost isSummary />
+                </div>
+              </Box>
             </Fade>
           ))}
         </div>
       </Container>
-      <Container className="flex justify-center my-16">
+      <Container className="flex justify-center my-8 lg:my-16">
         <Zoom>
-          <Button asChild>
-            <Link href="/blog">Ver mais</Link>
-          </Button>
+          <div className="max-w-full">
+            <Link href="/blog">
+              <Button>Ver mais</Button>
+            </Link>
+          </div>
         </Zoom>
       </Container>
 
       <Banner className="py-16">
         <Container className="flex flex-col items-center gap-16">
           <Fade appear cascade>
-            <Title className="text-2xl">Trabalhe conosco</Title>
+            <Title className="!text-xl sm:!text-2xl text-center">
+              Trabalhe conosco
+            </Title>
             <p className="text-center">
               Você quer fazer parte de uma empresa líder em transporte coletivo?
               A Rodap está sempre em busca de profissionais talentosos,
@@ -71,16 +84,21 @@ export default function Home() {
             </p>
           </Fade>
           <Zoom>
-            <Button scheme="secondary" asChild>
-              <Link href="/trabalhe-conosco">Quero fazer parte</Link>
-            </Button>
+            <div className="max-w-full">
+              <Link href="/trabalhe-conosco">
+                <Button scheme="secondary">Quero fazer parte</Button>
+              </Link>
+            </div>
           </Zoom>
         </Container>
       </Banner>
 
       <Container className="flex flex-col gap-14 justify-center items-center my-16">
         <Fade appear cascade>
-          <Title className="text-2xl" scheme="secondary">
+          <Title
+            className="!text-xl sm:!text-2xl text-center"
+            scheme="secondary"
+          >
             Sobre Nós
           </Title>
           <p className="text-center">
@@ -94,16 +112,16 @@ export default function Home() {
             Clique no botão abaixo para descobrir mais sobre a Rodap e se
             apaixonar por nossa empresa também!
           </p>
-          <div className="flex gap-16">
+          <div className="flex gap-4 lg:gap-8 flex-col md:flex-row max-w-full">
             <Zoom left>
-              <Button asChild>
-                <Link href="/sobre-nos">Nossa história</Link>
-              </Button>
+              <Link href="/sobre-nos">
+                <Button>Nossa história</Button>
+              </Link>
             </Zoom>
             <Zoom right>
-              <Button asChild>
-                <Link href="/nosso-negocio">Nosso negócio</Link>
-              </Button>
+              <Link href="/nosso-negocio">
+                <Button>Nosso negócio</Button>
+              </Link>
             </Zoom>
           </div>
         </Fade>
@@ -111,7 +129,10 @@ export default function Home() {
 
       <Container className="flex flex-col gap-14 justify-center items-center my-16">
         <Fade appear>
-          <Title className="text-2xl" scheme="secondary">
+          <Title
+            className="!text-xl sm:!text-2xl text-center"
+            scheme="secondary"
+          >
             Veja um pouco de nossa estrutura
           </Title>
         </Fade>
@@ -125,7 +146,10 @@ export default function Home() {
 
       <Container className="flex flex-col gap-14 justify-center items-center my-16">
         <Fade appear cascade>
-          <Title className="text-2xl" scheme="secondary">
+          <Title
+            className="!text-xl sm:!text-2xl text-center"
+            scheme="secondary"
+          >
             Você sabia?
           </Title>
           <p className="text-center">
@@ -140,10 +164,10 @@ export default function Home() {
           </p>
         </Fade>
         <Zoom>
-          <div className="flex gap-16">
-            <Button asChild>
-              <Link href="/servicos">Serviços</Link>
-            </Button>
+          <div className="max-w-full">
+            <Link href="/servicos">
+              <Button>Serviços</Button>
+            </Link>
           </div>
         </Zoom>
       </Container>

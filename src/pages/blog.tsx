@@ -22,8 +22,8 @@ export default function Blog() {
         </Container>
       </Banner>
 
-      <Container className="grid grid-cols-3 gap-10 my-16">
-        {Array.from({ length: 6 }, (_, index) => (
+      <Container className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 my-16">
+        {Array.from({ length: 12 }, (_, index) => (
           <Zoom key={index}>
             <FeaturedPost />
           </Zoom>

@@ -16,15 +16,20 @@ export const FeaturedPost = ({ isSummary = false }: FeaturedPostProps) => {
           width={400}
           height={300}
           alt="Imagem de destaque do Post"
-          className="w-full object-center rounded"
+          className={clsx("object-center rounded w-full")}
         />
       </div>
-      <div className="flex flex-col gap-9 summary">
+      <div
+        className={clsx(
+          "flex flex-col md:gap-0 justify-between summary",
+          isSummary ? "gap-2 md:gap-4" : "gap-4"
+        )}
+      >
         <Title
           scheme="tertiary"
           className={clsx(
             "normal-case !font-bold",
-            isSummary ? "!text-lg" : "!text-2xl"
+            isSummary ? "!text-base md:!text-lg" : "!text-xl md:!text-2xl"
           )}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing el...

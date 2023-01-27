@@ -19,7 +19,7 @@ export const Button = ({
     <>
       <Component
         className={clsx(
-          "uppercase py-4 px-28 font-bold rounded transition-all duration-200 border-2 border-transparent",
+          "uppercase py-4 w-72 max-w-full font-bold rounded transition-all duration-200 border-2 border-transparent",
           scheme === "primary"
             ? "bg-primary text-white hover:bg-white hover:text-primary hover:border-primary"
             : "bg-white text-primary hover:bg-primary hover:text-white hover:border-white",

@@ -12,7 +12,10 @@ export const Container = ({
 }: ContainerProps) => {
   return (
     <>
-      <div className={clsx("container mx-auto", className)} {...props}>
+      <div
+        className={clsx("container mx-auto px-4 sm:px-0", className)}
+        {...props}
+      >
         {children}
       </div>
     </>
