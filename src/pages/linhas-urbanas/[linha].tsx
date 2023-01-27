@@ -10,9 +10,12 @@ export default function Linha() {
     <>
       <Fade appear>
         <Banner scheme="secondary" className="!p-0">
-          <Container className="flex justify-between w-full">
-            <div className="flex justify-center items-start flex-col gap-16">
-              <Title className="" scheme="secondary">
+          <Container className="flex max-sm:flex-col max-sm:text-center gap-4 justify-between w-full max-lg:mt-8">
+            <div className="flex justify-center sm:items-start flex-col gap-8 lg:gap-16">
+              <Title
+                className="!text-2xl sm:!text-3xl md:!text-4xl lg:5xl"
+                scheme="secondary"
+              >
                 Linhas urbanas
                 <br />
                 Santa Luzia
@@ -22,17 +25,17 @@ export default function Linha() {
                 confira o horário do seu ônibus diretamente em nossa plataforma
               </p>
             </div>
-            <FeaturedImg />
+            <FeaturedImg className="block !w-full sm:!w-[640px] sm:h-[430px]" />
           </Container>
         </Banner>
       </Fade>
 
-      <Container className="my-14 flex flex-col gap-4">
-        <div className="grid grid-cols-6 gap-8 items-center justify-center">
+      <Container className=" my-8 lg:my-16 flex flex-col gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 items-center justify-center">
           {[
             {
               name: "1013-1",
-              description: "Senai - Zero Hora",
+              description: "Senai - Zero Hora - Belo Vale",
               href: "#",
             },
             {
@@ -129,7 +132,9 @@ export default function Linha() {
                 <Title asChild className="!text-3xl">
                   <h3>{v.name}</h3>
                 </Title>
-                <p className="text-white">{v.description}</p>
+                <p className="text-white text-center h-12 flex items-center">
+                  {v.description}
+                </p>
               </Link>
             </Fade>
           ))}

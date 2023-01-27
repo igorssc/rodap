@@ -29,9 +29,9 @@ export default function NossoNegocio() {
       <Container className="my-8 lg:my-16 flex flex-col gap-4">
         <div className="flex max-lg:flex-col items-center justify-center gap-8 lg:gap-16">
           <Zoom bottom>
-            <PuzzlePiecesImg className="" />
+            <PuzzlePiecesImg className="w-full lg:w-[409px] h-auto" />
           </Zoom>
-          <Fade right>
+          <Fade>
             <p className="text-justify flex-1">
               O Grupo Rodap é um empreendimento que se orgulha de seus
               princípios sólidos e políticas que dão suporte ao planejamento

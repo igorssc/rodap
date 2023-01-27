@@ -19,7 +19,7 @@ export const Header = () => {
               <br />
               Tem aqui!
             </Title>
-            <p className="uppercase leading-7 text-justify lg:text-left">
+            <p className="md:uppercase leading-7 text-justify lg:text-left">
               A Rodap é líder em transporte coletivo. Oferecemos viagens seguras
               e confortáveis, com tecnologia de ponta e equipe altamente
               treinada. Nossos horários flexíveis atendem às necessidades de

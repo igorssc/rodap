@@ -8,7 +8,7 @@ interface BoxProps extends HTMLAttributes<HTMLDivElement> {
 export const Box = ({ children, className, ...props }: BoxProps) => {
   return (
     <>
-      <div className={clsx("shadow-md shadow-gray-400", className)} {...props}>
+      <div className={clsx("shadow-md shadow-gray-300", className)} {...props}>
         {children}
       </div>
     </>
