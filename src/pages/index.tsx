@@ -46,13 +46,16 @@ export default function Home() {
         </div>
         <div className="lg:col-span-2 grid sm:grid-cols-2 lg:flex lg:flex-col gap-8 min-[300px]:gap-3">
           {Array.from({ length: 5 }, (_, index) => (
-            <Fade appear key={index}>
-              <Box className="lg:shadow-none relative h-auto overflow-hidden">
+            <Box
+              key={index}
+              className="lg:shadow-none relative h-auto overflow-hidden"
+            >
+              <Fade appear>
                 <div className="grid relative max-h-auto overflow-hidden min-[300px]:grid-cols-3 gap-5 items-center min-[300px]:[&_.summary]:col-span-2 max-[300px]:[&_.summary]:px-4 max-[300px]:[&_.summary]:pb-4">
                   <FeaturedPost isSummary />
                 </div>
-              </Box>
-            </Fade>
+              </Fade>
+            </Box>
           ))}
         </div>
       </Container>
