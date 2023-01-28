@@ -10,7 +10,7 @@ interface FeaturedPostProps {
 export const FeaturedPost = ({ isSummary = false }: FeaturedPostProps) => {
   return (
     <>
-      <div className={clsx("w-full h-full overflow-clip image")}>
+      <div className={clsx("w-full h-full overflow-hidden image")}>
         <Image
           src="https://picsum.photos/400/300"
           width={400}

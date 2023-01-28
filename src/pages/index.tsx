@@ -44,7 +44,7 @@ export default function Home() {
             </Box>
           </Fade>
         </div>
-        <div className="lg:col-span-2 grid sm:grid-cols-2 lg:flex lg:flex-col gap-8 min-[300px]:gap-3">
+        <div className="overflow-hidden lg:col-span-2 grid sm:grid-cols-2 lg:flex lg:flex-col gap-8 min-[300px]:gap-3">
           {Array.from({ length: 5 }, (_, index) => (
             <Fade appear key={index}>
               <Box className="lg:shadow-none">
