@@ -45,15 +45,15 @@ export default function Home() {
           </Fade>
         </div>
         <div className="lg:col-span-2 grid sm:grid-cols-2 lg:flex lg:flex-col gap-8 min-[300px]:gap-3">
-          {Array.from({ length: 5 }, (_, index) => (
-            <Box key={index} className="lg:shadow-none overflow-hidden">
-              <Fade appear>
-                <div className="grid min-[300px]:grid-cols-3 gap-5 items-center min-[300px]:[&_.summary]:col-span-2 max-[300px]:[&_.summary]:px-4 max-[300px]:[&_.summary]:pb-4">
+          <Fade appear>
+            {Array.from({ length: 5 }, (_, index) => (
+              <Box key={index} className="lg:shadow-none overflow-hidden">
+                <div className="grid min-[300px]:grid-cols-3 gap-5 items-stretch min-[300px]:[&_.summary]:col-span-2 max-[300px]:[&_.summary]:px-4 max-[300px]:[&_.summary]:pb-4">
                   <FeaturedPost isSummary />
                 </div>
-              </Fade>
-            </Box>
-          ))}
+              </Box>
+            ))}
+          </Fade>
         </div>
       </Container>
       <Container className="flex justify-center my-8 lg:my-16">
