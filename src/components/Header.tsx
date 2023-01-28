@@ -8,7 +8,7 @@ import { Title } from "./Title";
 export const Header = () => {
   return (
     <>
-      <Container className="grid md:grid-cols-2 gap-6 lg:gap-16 items-stretch pb-8 md:pb-16 pt-4 md:pt-0">
+      <Container className="grid md:grid-cols-2 gap-6 lg:gap-16 items-stretch pb-8 md:pb-14 xl:pb-16 pt-4 md:pt-8 xl:pt-0">
         <Fade appear cascade>
           <div className="flex flex-col gap-4 justify-around ">
             <Title
@@ -19,7 +19,7 @@ export const Header = () => {
               <br />
               Tem aqui!
             </Title>
-            <p className="md:uppercase leading-7 text-justify lg:text-left">
+            <p className="lg:uppercase leading-7 text-justify lg:text-left">
               A Rodap é líder em transporte coletivo. Oferecemos viagens seguras
               e confortáveis, com tecnologia de ponta e equipe altamente
               treinada. Nossos horários flexíveis atendem às necessidades de

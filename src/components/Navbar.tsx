@@ -35,10 +35,10 @@ const NavbarComponent = ({ children }: NavbarComponentProps) => {
   const handleWindowResize = () => {
     const windowWidth = document.querySelector("html")?.clientWidth || 0;
 
-    if (windowWidth < 768) {
+    if (windowWidth < 1024) {
       setIsMobile(true);
     }
-    if (windowWidth >= 768) {
+    if (windowWidth >= 1024) {
       setIsMobile(false);
     }
   };
@@ -56,7 +56,7 @@ const NavbarComponent = ({ children }: NavbarComponentProps) => {
   return (
     <>
       <div
-        className="fixed z-[99998] top-0 inset-x-0 md:static bg-primary border-b-2 border-white md:border-0 md:bg-transparent flex flex-row items-center justify-between py-3 px-5 md:px-0 md:py-14"
+        className="fixed z-[99998] top-0 inset-x-0 lg:static bg-primary border-b-2 border-white lg:border-0 lg:bg-transparent flex flex-row items-center justify-between py-3 px-5 lg:px-0 lg:py-14"
         ref={ref}
       >
         <Link href="/">
@@ -64,21 +64,21 @@ const NavbarComponent = ({ children }: NavbarComponentProps) => {
             src={isMobile ? logoWhiteImg : logoImg}
             alt="Logo from Rodap"
             priority
-            className="h-7 md:h-10 w-auto"
+            className="h-7 lg:h-10 w-auto"
           />
         </Link>
-        <ul className="flex-row gap-4 items-center justify-center hidden md:flex">
+        <ul className="flex-row gap-4 items-center justify-center hidden lg:flex">
           {children}
         </ul>
         <List
           size={32}
           color="#ffffff"
-          className="cursor-pointer md:hidden"
+          className="cursor-pointer lg:hidden"
           onClick={() => setIsOpenMenuMobile(true)}
         />
         <div
           className={clsx(
-            "absolute md:hidden h-screen top-0 z-[99999] text-white bg-primary transition-all duration-500 px-4 pt-4 w-[220px] max-w-full",
+            "absolute lg:hidden h-screen top-0 z-[99999] text-white bg-primary transition-all duration-500 px-4 pt-4 w-[220px] max-w-full",
             isOpenMenuMobile ? "left-0" : "-left-full"
           )}
         >
@@ -93,7 +93,7 @@ const NavbarComponent = ({ children }: NavbarComponentProps) => {
         {isOpenMenuMobile && (
           <div
             className={clsx(
-              "absolute inset-x-0 top-0 h-screen transition-all duration-300 block md:hidden",
+              "absolute inset-x-0 top-0 h-screen transition-all duration-300 block lg:hidden",
               isOpenBackdrop
                 ? "z-[99997] bg-black/50 opacity-100"
                 : "bg-transparent opacity-0 -z-50"
@@ -102,7 +102,7 @@ const NavbarComponent = ({ children }: NavbarComponentProps) => {
           ></div>
         )}
       </div>
-      <div className="mb-[58px] md:hidden"></div>
+      <div className="mb-[58px] lg:hidden"></div>
     </>
   );
 };
@@ -121,8 +121,8 @@ const NavbarItem = ({ name, to }: NavbarItemProps) => {
         <li
           className={clsx(
             pathname == to &&
-              "text-white md:text-primary font-light md:font-medium underline underline-offset-4",
-            "hover:text-white md:hover:text-primary"
+              "text-white lg:text-primary font-light lg:font-medium underline underline-offset-4",
+            "hover:text-white lg:hover:text-primary"
           )}
         >
           {name}
