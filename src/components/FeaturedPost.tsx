@@ -15,7 +15,9 @@ export const FeaturedPost = ({ isSummary = false }: FeaturedPostProps) => {
         width={400}
         height={300}
         alt="Imagem de destaque do Post"
-        className={clsx("object-center rounded min-w-full object-cover")}
+        className={clsx(
+          "object-center rounded min-w-full min-h-full object-cover"
+        )}
       />
       <div
         className={clsx(
