@@ -48,7 +48,7 @@ export default function Home() {
           {Array.from({ length: 5 }, (_, index) => (
             <Fade appear key={index}>
               <Box className="lg:shadow-none relative h-auto">
-                <div className="grid relative max-h-auto min-[300px]:grid-cols-3 gap-5 items-center min-[300px]:[&_.summary]:col-span-2 max-[300px]:[&_.summary]:px-4 max-[300px]:[&_.summary]:pb-4">
+                <div className="grid relative max-h-auto overflow-hidden min-[300px]:grid-cols-3 gap-5 items-center min-[300px]:[&_.summary]:col-span-2 max-[300px]:[&_.summary]:px-4 max-[300px]:[&_.summary]:pb-4">
                   <FeaturedPost isSummary />
                 </div>
               </Box>
