@@ -28,33 +28,34 @@ export default function Horarios() {
       </Banner>
 
       <Container className="my-8 lg:my-16 flex flex-col gap-4">
-        <div className="grid sm:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center justify-center overflow-hidden">
-          {[
-            {
-              name: "Linhas Metropolitanas",
-              img: metropolitanasImg,
-              href: "http://www.consultas.der.mg.gov.br/grgx/sgtm/consulta_linha.xhtml",
-              target: "_blank",
-            },
-            {
-              name: "Linhas Ribeirão das Neves",
-              img: riberaoDasNevesImg,
-              href: "/linhas-urbanas/ribeirao-das-neves",
-            },
-            {
-              name: "Linhas Urbanas BH",
-              img: urbanasBHImg,
-              href: "https://portalbhtrans.pbh.gov.br/quadrodehorario",
-              target: "_blank",
-            },
-            {
-              name: "Linhas Urbanas Santa Luzia",
-              img: urbanasSantaLuziaImg,
-              href: "/linhas-urbanas/santa-luzia",
-            },
-          ].map((v, i) => (
-            <Fade cascade key={i}>
+        <Fade cascade>
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center justify-center overflow-hidden">
+            {[
+              {
+                name: "Linhas Metropolitanas",
+                img: metropolitanasImg,
+                href: "http://www.consultas.der.mg.gov.br/grgx/sgtm/consulta_linha.xhtml",
+                target: "_blank",
+              },
+              {
+                name: "Linhas Ribeirão das Neves",
+                img: riberaoDasNevesImg,
+                href: "/linhas-urbanas/ribeirao-das-neves",
+              },
+              {
+                name: "Linhas Urbanas BH",
+                img: urbanasBHImg,
+                href: "https://portalbhtrans.pbh.gov.br/quadrodehorario",
+                target: "_blank",
+              },
+              {
+                name: "Linhas Urbanas Santa Luzia",
+                img: urbanasSantaLuziaImg,
+                href: "/linhas-urbanas/santa-luzia",
+              },
+            ].map((v, i) => (
               <Link
+                key={i}
                 className="relative overflow-hidden hover:scale-[1.02] transition-all"
                 href={v.href}
                 {...(v.target && { target: v.target })}
@@ -73,9 +74,9 @@ export default function Horarios() {
                   className="w-auto h-52 object-cover md:w-full md:h-auto"
                 />
               </Link>
-            </Fade>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Fade>
       </Container>
     </>
   );
