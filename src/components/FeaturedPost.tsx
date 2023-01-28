@@ -10,13 +10,15 @@ interface FeaturedPostProps {
 export const FeaturedPost = ({ isSummary = false }: FeaturedPostProps) => {
   return (
     <>
-      <div className={clsx("w-full overflow-clip image")}>
+      <div className={clsx("w-full h-full overflow-clip image")}>
         <Image
           src="https://picsum.photos/400/300"
           width={400}
           height={300}
           alt="Imagem de destaque do Post"
-          className={clsx("object-center rounded w-full")}
+          className={clsx(
+            "object-center rounded min-w-full min-h-full object-cover"
+          )}
         />
       </div>
       <div
