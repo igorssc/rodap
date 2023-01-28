@@ -62,7 +62,7 @@ export default function Horarios() {
               >
                 <div className="bg-black/50 absolute inset-0"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Title className="!text-xl sm:!text-2xl md:!text-3xl text-center">
+                  <Title className="!text-xl sm:!text-2xl lg:!text-3xl text-center">
                     {v.name}
                   </Title>
                 </div>
