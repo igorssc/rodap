@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
-import featuredImg from "../assets/featured.png";
+import featuredImg from "../assets/featured.webp";
 import { Container } from "./Container";
 import { Title } from "./Title";
 

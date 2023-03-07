@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { List, X } from "phosphor-react";
 import { ReactNode, useEffect, useRef, useState } from "react";
-import logoWhiteImg from "../assets/logo-branca.png";
-import logoImg from "../assets/logo.png";
+import logoWhiteImg from "../assets/logo-branca.webp";
+import logoImg from "../assets/logo.webp";
 
 interface NavbarComponentProps {
   children: ReactNode;

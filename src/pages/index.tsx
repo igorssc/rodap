@@ -19,7 +19,7 @@ import gallery07ThumbImg from "../assets/gallery/gallery-07-thumb.webp";
 import gallery07Img from "../assets/gallery/gallery-07.webp";
 import gallery08ThumbImg from "../assets/gallery/gallery-08-thumb.webp";
 import gallery08Img from "../assets/gallery/gallery-08.webp";
-import isoImg from "../assets/selo_ISO_9001_2015.png";
+import isoImg from "../assets/selo_ISO_9001_2015.webp";
 import { Banner } from "../components/Banner";
 import { Button } from "../components/Button";
 import { Container } from "../components/Container";

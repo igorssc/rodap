@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
-import featuredImg from "../assets/about-us-page-featured.png";
-import featuredBeloHorizonteImg from "../assets/featured-units/belo-horizonte.png";
-import featuredJustinopolisImg from "../assets/featured-units/justinopolis.png";
-import featuredSantaLuziaImg from "../assets/featured-units/santa-luzia.png";
-import featuredSaoBeneditoImg from "../assets/featured-units/sao-benedito.png";
+import featuredImg from "../assets/about-us-page-featured.webp";
+import featuredBeloHorizonteImg from "../assets/featured-units/belo-horizonte.webp";
+import featuredJustinopolisImg from "../assets/featured-units/justinopolis.webp";
+import featuredSantaLuziaImg from "../assets/featured-units/santa-luzia.webp";
+import featuredSaoBeneditoImg from "../assets/featured-units/sao-benedito.webp";
 import { Banner } from "../components/Banner";
 import { Container } from "../components/Container";
 import { Title } from "../components/Title";
