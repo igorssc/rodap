@@ -11,12 +11,12 @@ import "../styles/globals.css";
 export default function App({ Component, pageProps }: AppProps) {
   const pages = [
     { name: "Página Inicial", to: "/" },
-    { name: "Blog", to: "/blog" },
+    // { name: "Blog", to: "/blog" },
     { name: "Trabalhe conosco", to: "/trabalhe-conosco" },
     { name: "Contato", to: "/contato" },
     { name: "Sobre", to: "/sobre-nos" },
     // { name: "Venda de veículos", to: "/venda-de-veiculos" },
-    { name: "Horários", to: "/horarios" },
+    // { name: "Horários", to: "/horarios" },
     { name: "Serviços", to: "/servicos" },
   ];
 

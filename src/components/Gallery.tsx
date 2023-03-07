@@ -60,8 +60,8 @@ export const Gallery = ({ items }: GalleryProps) => {
                   ? item.original
                   : item.original.src
               }
-              data-pswp-width={1080}
-              data-pswp-height={864}
+              data-pswp-width={1280}
+              data-pswp-height={768}
               target="_blank"
               rel="noreferrer"
               className="flex relative rounded cursor-pointer border-4 border-white m-auto w-full hover:scale-[1.02] transition-all"
@@ -76,6 +76,7 @@ export const Gallery = ({ items }: GalleryProps) => {
                 alt="gallery item"
                 loading="lazy"
                 fill
+                className="object-cover"
               />
             </a>
           </Fade>

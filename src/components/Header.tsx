@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import featuredImg from "../assets/featured.png";
 import { Container } from "./Container";
@@ -26,7 +25,7 @@ export const Header = () => {
               nossos clientes. Experimente a diferença e escolha a Rodap!
             </p>
             <span className="text-primary font-bold">
-              <Link href="/horarios">Confira o horário do seu ônibus aqui</Link>
+              {/* <Link href="/horarios">Confira o horário do seu ônibus aqui</Link> */}
             </span>
           </div>
           <div className="flex items-center justify-end">
@@ -34,7 +33,7 @@ export const Header = () => {
               src={featuredImg}
               alt="Imagem de destaque"
               priority
-              className="rounded"
+              className="rounded min-h-[288px] min-w-full object-cover"
             />
           </div>
         </Fade>

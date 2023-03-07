@@ -3,15 +3,40 @@ import Image from "next/image";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
+import gallery01ThumbImg from "../assets/gallery/gallery-01-thumb.webp";
+import gallery01Img from "../assets/gallery/gallery-01.webp";
+import gallery02ThumbImg from "../assets/gallery/gallery-02-thumb.webp";
+import gallery02Img from "../assets/gallery/gallery-02.webp";
+import gallery03ThumbImg from "../assets/gallery/gallery-03-thumb.webp";
+import gallery03Img from "../assets/gallery/gallery-03.webp";
+import gallery04ThumbImg from "../assets/gallery/gallery-04-thumb.webp";
+import gallery04Img from "../assets/gallery/gallery-04.webp";
+import gallery05ThumbImg from "../assets/gallery/gallery-05-thumb.webp";
+import gallery05Img from "../assets/gallery/gallery-05.webp";
+import gallery06ThumbImg from "../assets/gallery/gallery-06-thumb.webp";
+import gallery06Img from "../assets/gallery/gallery-06.webp";
+import gallery07ThumbImg from "../assets/gallery/gallery-07-thumb.webp";
+import gallery07Img from "../assets/gallery/gallery-07.webp";
+import gallery08ThumbImg from "../assets/gallery/gallery-08-thumb.webp";
+import gallery08Img from "../assets/gallery/gallery-08.webp";
 import isoImg from "../assets/selo_ISO_9001_2015.png";
 import { Banner } from "../components/Banner";
-import { Box } from "../components/Box";
 import { Button } from "../components/Button";
 import { Container } from "../components/Container";
-import { FeaturedPost } from "../components/FeaturedPost";
 import { Gallery } from "../components/Gallery";
 import { Header } from "../components/Header";
 import { Title } from "../components/Title";
+
+const galleryImgs = [
+  { original: gallery01Img, thumbnail: gallery01ThumbImg },
+  { original: gallery02Img, thumbnail: gallery02ThumbImg },
+  { original: gallery03Img, thumbnail: gallery03ThumbImg },
+  { original: gallery04Img, thumbnail: gallery04ThumbImg },
+  { original: gallery05Img, thumbnail: gallery05ThumbImg },
+  { original: gallery06Img, thumbnail: gallery06ThumbImg },
+  { original: gallery07Img, thumbnail: gallery07ThumbImg },
+  { original: gallery08Img, thumbnail: gallery08ThumbImg },
+];
 
 export default function Home() {
   return (
@@ -22,7 +47,7 @@ export default function Home() {
 
       <Header />
 
-      <Banner>
+      {/* <Banner>
         <Container>
           <Title className="!text-xl sm:!text-2xl md:!text-3xl text-center">
             ÚLTIMAS POSTAGENS
@@ -64,7 +89,7 @@ export default function Home() {
             </Link>
           </div>
         </Zoom>
-      </Container>
+      </Container> */}
 
       <Banner className="py-16">
         <Container className="flex flex-col items-center gap-16">
@@ -142,9 +167,9 @@ export default function Home() {
           </Title>
         </Fade>
         <Gallery
-          items={Array.from({ length: 8 }, () => ({
-            original: "https://picsum.photos/1080/864",
-            thumbnail: "https://picsum.photos/1080/864",
+          items={Array.from({ length: 8 }, (_, i) => ({
+            original: galleryImgs[i].original,
+            thumbnail: galleryImgs[i].thumbnail,
           }))}
         />
       </Container>

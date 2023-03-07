@@ -8,9 +8,22 @@ export const Footer = () => {
         <span className="block text-center font-bold">
           Rua Ana Batista da Cruz, nº 850, Belo Vale - Santa Luzia/MG
         </span>
-        <strong className="font-normal">
-          © 2022 - {new Date().getFullYear()} - Rodap Transportes Coletivos
-        </strong>
+        <p>
+          <span className="font-bold">SAC</span>{" "}
+          <Link href="tel:0800 941 9680">0800 941 9680</Link>
+        </p>
+        <div className="">
+          <Link
+            href="http://189.112.2.95:8081/TeminalWeb/Login.aspx?ReturnUrl=%2fTeminalWeb"
+            target="_blank"
+          >
+            Área do funcionário
+          </Link>{" "}
+          -{" "}
+          <Link href="http://webmail.rodap.com.br/" target="_blank">
+            Webmail
+          </Link>
+        </div>
         <p>
           Desenvolvido por{" "}
           <Link
@@ -21,6 +34,9 @@ export const Footer = () => {
             IGS DESIGN
           </Link>
         </p>
+        <strong className="font-normal">
+          © 2022 - {new Date().getFullYear()} - Rodap Transportes Coletivos
+        </strong>
       </Banner>
     </>
   );
