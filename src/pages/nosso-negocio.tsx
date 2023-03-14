@@ -7,6 +7,7 @@ import TargetImg from "../assets/target.svg";
 import TrophyImg from "../assets/trophy.svg";
 import { Banner } from "../components/Banner";
 import { Container } from "../components/Container";
+import { Slide } from "../components/Slide";
 import { Title } from "../components/Title";
 
 export default function NossoNegocio() {
@@ -135,6 +136,10 @@ export default function NossoNegocio() {
             </Fade>
           </div>
         </div>
+
+        <Zoom>
+          <Slide />
+        </Zoom>
       </Container>
     </>
   );

@@ -32,6 +32,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   react-reveal: ^1.2.2
+  react-slideshow-image: ^4.2.1
   tailwindcss: ^3.2.4
   typescript: 4.9.3
 
@@ -56,6 +57,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-reveal: 1.2.2_react@18.2.0
+  react-slideshow-image: 4.2.1_react@18.2.0
 
 devDependencies:
   '@types/multer': 1.4.7
@@ -2987,6 +2989,10 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: false
 
+  /@tweenjs/tween.js/18.6.4:
+    resolution: {integrity: sha512-lB9lMjuqjtuJrx7/kOkqQBtllspPIN+96OvTCeJ2j5FEzinoAXTdAMFnDAQT1KVPRlnYfBrqxtqP66vDM40xxQ==}
+    dev: false
+
   /@types/body-parser/1.19.2:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
     dependencies:
@@ -5263,6 +5269,16 @@ packages:
       react: 18.2.0
     dev: false
 
+  /react-slideshow-image/4.2.1_react@18.2.0:
+    resolution: {integrity: sha512-R73s0L+4ect3e49qLP+EQE0m+BWs72LAfsfR2Z941snWq2W9o0poWtYTyZmCH7Ui5HaT0qkpszzeZ1F0xiGkZg==}
+    peerDependencies:
+      react: '>=15'
+    dependencies:
+      '@tweenjs/tween.js': 18.6.4
+      react: 18.2.0
+      resize-observer-polyfill: 1.5.1
+    dev: false
+
   /react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
     peerDependencies:
@@ -5378,6 +5394,10 @@ packages:
     hasBin: true
     dependencies:
       jsesc: 0.5.0
+    dev: false
+
+  /resize-observer-polyfill/1.5.1:
+    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
     dev: false
 
   /resolve-from/4.0.0:
