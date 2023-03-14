@@ -8,7 +8,7 @@ export const WhatsAppButton = () => {
     <Link
       href="https://api.whatsapp.com/send?phone=5531999056065"
       target="_blank"
-      className="fixed flex z-50 cursor-pointer hover:scale-110 transition-all duration-300 right-7 bottom-5 lg:right-14 lg:bottom-10 gap-4 bg-white rounded-full border-[#00bb2d] border-2"
+      className="fixed flex z-50 cursor-pointer hover:scale-110 transition-all duration-300 right-3 bottom-2 md:right-7 md:bottom-5 lg:right-14 lg:bottom-10 gap-4 bg-white rounded-full border-[#00bb2d] border-2"
     >
       <div className="flex justify-center items-center gap-4">
         <Image

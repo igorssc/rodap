@@ -19,7 +19,7 @@ export const ScrollTopButton = () => {
       onClick={() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}
-      className={`fixed z-50 cursor-pointer bg-primary hover:scale-110 text-gray-100 w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full transition-all duration-300 right-7 bottom-20 md:bottom-[5.5rem] lg:right-14 lg:bottom-28 border border-white ${
+      className={`fixed z-50 cursor-pointer bg-primary hover:scale-110 text-gray-100 w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full transition-all duration-300 right-3 md:right-7 bottom-16 md:bottom-[5.5rem] lg:right-14 lg:bottom-28 border border-white ${
         !visible && "opacity-0"
       }`}
     >
