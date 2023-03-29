@@ -14,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     // { name: "Blog", to: "/blog" },
     { name: "Trabalhe conosco", to: "/trabalhe-conosco" },
     { name: "Contato", to: "/contato" },
+    { name: "Nosso negócio", to: "/nosso-negocio" },
     { name: "Sobre", to: "/sobre-nos" },
     // { name: "Venda de veículos", to: "/venda-de-veiculos" },
     // { name: "Horários", to: "/horarios" },

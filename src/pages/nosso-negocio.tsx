@@ -32,7 +32,7 @@ export default function NossoNegocio() {
           <Zoom bottom>
             <PuzzlePiecesImg className="w-full lg:w-[409px] h-auto" />
           </Zoom>
-          <Fade>
+          <Fade cascade>
             <p className="text-justify flex-1">
               O Grupo Rodap é um empreendimento que se orgulha de seus
               princípios sólidos e políticas que dão suporte ao planejamento
@@ -48,6 +48,14 @@ export default function NossoNegocio() {
               estamos oferecendo os melhores serviços possíveis. Nossa
               prioridade é sempre garantir a satisfação de nossos clientes e
               contribuir para o desenvolvimento da comunidade em que atuamos.
+              <br />
+              <br />
+              Em 2022, revisamos o nosso Planejamento Estratégico e definimos as
+              novas diretrizes que orientarão a nossa empresa para um propósito
+              compartilhado, visando atingir os objetivos organizacionais até
+              2025. Conheça agora a nossa visão, missão e valores; nossos
+              objetivos e política da qualidade; e os nossos valores
+              organizacionais:
             </p>
           </Fade>
         </div>
@@ -140,6 +148,199 @@ export default function NossoNegocio() {
         <Zoom>
           <Slide />
         </Zoom>
+
+        <Fade cascade>
+          <Title
+            asChild
+            scheme="tertiary"
+            className="!text-xl sm:!text-2xl mt-4 sm:mt-8"
+          >
+            <h2>Pessoas</h2>
+          </Title>
+          <div>
+            <p className="text-justify">
+              A Rodap tem como filosofia empresarial a prestação de serviços de
+              transporte de passageiros com segurança, conforto e pontualidade,
+              conforme estabelecido pelos órgãos gestores. Para isso, a empresa
+              trabalha orientada para o profissionalismo, integração,
+              disciplina, qualidade, atualização tecnológica e reciclagem de
+              pessoal, fatores que representam à essência dos nossos valores.
+            </p>
+          </div>
+          <div>
+            <p className="text-justify">
+              A satisfação dos clientes é uma preocupação diária da Rodap e
+              sabemos que o atendimento é o verdadeiro diferencial na prestação
+              de serviços. Nosso Grupo considera seu capital humano um item
+              decisivo para o alcance deste objetivo e o sucesso de suas
+              empresas e, por isso, realiza constantemente capacitações para
+              qualificar ainda mais seus funcionários.
+            </p>
+          </div>
+          <div>
+            <p className="text-justify">
+              Nossos programas estão voltados para as reais necessidades do
+              Grupo e seus diferentes setores, além de satisfazer as exigências
+              do mercado. Procuramos aperfeiçoar, treinar, reciclar e motivar
+              nossos funcionários para que, juntos, possamos proporcionar um
+              excelente atendimento aos nossos clientes.
+            </p>
+          </div>
+          <div>
+            <p className="text-justify">
+              O Grupo possui o programa CapacitAÇÃO que é composto por diversos
+              treinamentos dentro do Programa Anual de Treinamento – PAT,
+              construído através do Levantamento de Necessidades de Treinamento
+              – LNT de cada unidade. As prioridades de treinamentos são
+              orientadas pelos planos de ação definidos no planejamento
+              estratégico.
+            </p>
+          </div>
+          <div>
+            <p className="text-justify">
+              Entre os diversos treinamentos oferecidos aos funcionários do
+              Grupo podemos citar:
+            </p>
+          </div>
+          <ul className="list-disc my-4">
+            <li>
+              Treinamento Introdutório e de Integração, responsável por
+              ambientar e capacitar o novo funcionário à rotina da empresa;
+            </li>
+            <li>
+              Treinamentos voltados para a melhoria na gestão, que incluem
+              Métodos de Análise de Solução de Problemas (MASP) e Mapeamento de
+              Competências;
+            </li>
+            <li>
+              Treinamentos voltados às equipes operacionais, que incluem, dentre
+              outros, o Programa de Condução Inteligente (PCI), cujo objetivo é
+              melhorar a satisfação dos motoristas com menor desgaste físico,
+              reduzir o impacto ambiental e o consumo de óleo diesel, melhorar a
+              qualidade do serviço prestado através da direção mais segura. Para
+              incentivar a participação dos operadores, os participantes recebem
+              prêmios mensais sempre que as metas são alcançadas;
+            </li>
+            <li>
+              Treinamentos voltados para segurança, preservação da saúde física,
+              mental e qualidade de vida do trabalhador;
+            </li>
+            <li>
+              Programas de promoção interna, que buscam oferecer oportunidades
+              de crescimento aos profissionais que já atuam no Grupo;
+            </li>
+            <li>
+              Programas voltados para a melhoria na gestão, como por exemplo, o
+              Programa de Desenvolvimento de Líderes (PDL);
+            </li>
+            <li>
+              Treinamentos voltados para a melhoria na qualidade do atendimento
+              entre os setores como o de Qualidade no Atendimento interno.
+            </li>
+          </ul>
+        </Fade>
+
+        <Fade cascade>
+          <Title
+            asChild
+            scheme="tertiary"
+            className="!text-xl sm:!text-2xl mt-4 sm:mt-8"
+          >
+            <h2>Meio ambiente</h2>
+          </Title>
+          <Title
+            asChild
+            scheme="tertiary"
+            className="!text-md sm:!text-lg !font-medium"
+          >
+            <h3>Sistema de Gestão Ambiental – SGA</h3>
+          </Title>
+          <div>
+            <p className="text-justify">
+              A Rodap tem inserido em seu Planejamento Estratégico a promoção da
+              sustentabilidade, aliadas ao desenvolvimento da mobilidade urbana
+              nos municípios em que atua. O Grupo realiza programas de controle
+              e monitoramento ambiental. Essas ações têm como objetivo buscar a
+              melhoria na qualidade de vida de seus funcionários, usuários do
+              transporte e municípios atendidos, além de atender a legislação
+              ambiental em vigor.
+            </p>
+          </div>
+          <Title
+            asChild
+            scheme="tertiary"
+            className="!text-md sm:!text-lg !font-medium normal-case"
+          >
+            <h3>Programas ambientais adotados</h3>
+          </Title>
+          <ul className="list-disc my-4 flex flex-col gap-4">
+            <li>
+              <strong>Gerenciamento de Resíduos Sólidos -</strong> Para resíduos
+              perigosos, o Grupo Rodap possui contrato com empresas
+              especializadas e licenciadas para coleta, transporte, tratamento e
+              destinação final. Já para resíduos sólidos recicláveis e comuns,
+              os colaboradores recebem orientações para a realização da coleta
+              seletiva.
+            </li>
+            <li>
+              <strong>Monitoramento de Efluentes Líquidos -</strong> Inseridas
+              no Programa de Recebimento e Controle dos Efluentes Não Domésticos
+              (PRECEND), as empresas do Grupo Rodap atendem as Normas Técnicas
+              da Companhia de Saneamento de Minas Gerais (COPASA/MG). As
+              unidades possuem o sistema de drenagem dos efluentes não
+              domésticos totalmente separados da drenagem dos efluentes
+              domésticos e das águas pluviais. Realizam em prazos determinados
+              pela COPASA os automonitoramentos dos parâmetros físico-químicos
+              antes do lançamento dos efluentes à rede pública coletora. Além
+              disso, as empresas possuem aparelhagem moderna para reciclagem dos
+              efluentes gerados na lavagem de veículos. Os equipamentos das
+              Estações de Tratamento de Esgoto (ETE’s) acoplados ao lava-jato
+              das unidades tratam 100% da água utilizada no processo e as
+              reutilizam.
+            </li>
+            <li>
+              <strong>Monitoramento de Emissões Atmosféricas -</strong> As
+              instalações do Sistema de Armazenamento Aéreo de Combustível –
+              SAAC das unidades possuem instalados equipamentos para o controle
+              de vapores. Nesse programa ainda, é realizado o Projeto Despoluir
+              – Programa Ambiental do Transporte, da Confederação Nacional do
+              Transporte (CNT), onde a emissão de poluentes por veículos
+              automotores são monitorados.
+            </li>
+            <li>
+              <strong>Prêmio FRETRAM de Qualidade do Ar -</strong> Em junho de
+              2022, o Grupo Rodap recebeu o Prêmio FRETRAM de Qualidade do Ar. A
+              empresa foi reconhecida como uma das organizações do setor de
+              transporte que se destacou durante todo o ano de 2021 no uso
+              racional de combustível e na baixa de emissão de poluentes pelos
+              veículos, através de sua participação no Programa Despoluir,
+              coordenado pela Federação das Empresas de Transporte de
+              Passageiros do Estado de Minas Gerais (FETRAM).
+            </li>
+            <li>
+              <strong>Boas Práticas Ambientais –</strong> Os funcionários
+              recebem orientações e treinamentos constantes sobre as questões
+              ambientais, como sobre a preservação dos recursos naturais, o
+              controle da poluição, da promoção da sustentabilidade. Dentre as
+              informações disponíveis encontra-se a utilização consciente da
+              água e energia. Anualmente, realizamos a Semana do Meio Ambiente e
+              contamos com participação dos colaboradores em um projeto amplo e
+              de muita aprendizagem sobre o tema.
+            </li>
+            <li>
+              <strong>Frota menos poluente –</strong> A empresa conta com
+              auto-monitoramento da frota (teste de opacidade) para averiguar a
+              emissão de poluentes no meio ambiente, com o objetivo de
+              controlá-los.
+            </li>
+            <li>
+              <strong>Geramos nossa própria energia –</strong> Contamos com
+              usina de energia solar fotovoltaica. Através da radiação solar,
+              geramos energia renovável e limpa, o que consequentemente
+              contribui com a sustentabilidade do planeta.
+            </li>
+          </ul>
+        </Fade>
       </Container>
     </>
   );

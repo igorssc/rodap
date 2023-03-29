@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
 import featuredImg from "../assets/about-us-page-featured.webp";
-import featuredBeloHorizonteImg from "../assets/featured-units/belo-horizonte.webp";
 import featuredJustinopolisImg from "../assets/featured-units/justinopolis.webp";
 import featuredSantaLuziaImg from "../assets/featured-units/santa-luzia.webp";
 import featuredSaoBeneditoImg from "../assets/featured-units/sao-benedito.webp";
@@ -42,41 +41,38 @@ export default function Sobre() {
           <div>
             <p>
               Fundado no início da década de 70, o Grupo Rodap é o resultado de
-              uma visão empreendedora e uma paixão incansável por transporte.
-              Tudo começou com Heloísio Marcos Silveira, um vendedor de frutas
-              que trabalhava no Mercado Central de Belo Horizonte e cujo sonho
-              foi inspirado pelo ofício de seu pai, Gracino João Diniz Silveira,
-              que trabalhou com transporte coletivo de 1928 a 1946.
+              uma visão empreendedora e uma grande paixão por transporte. Tudo
+              começou com Heloísio Marcos Silveira, um vendedor de frutas que
+              trabalhava no Mercado Central de Belo Horizonte, cujo sonho foi
+              inspirado pelo ofício de seu pai, Gracino João Diniz Silveira, que
+              trabalhou com transporte coletivo de 1928 a 1946.
             </p>
           </div>
           <div>
             <p>
-              Juntamente com seu irmão, Nilton Jorge da Silveira, outro sócio
-              fundador, eles construíram a Rodap a partir de um capital que
-              adquiriram com o comércio. Naquele momento, a empresa contava com
-              apenas 14 ônibus e uma garagem. Mas isso não impediu que eles
+              Juntamente com seu irmão, Nilton Jorge da Silveira, outro
+              sócio-fundador, eles construíram a Rodap a partir de um capital
+              que adquiriram com o comércio. Naquele momento, a empresa contava
+              com apenas 14 ônibus e uma garagem. Mas isso não impediu que eles
               vissem além e se esforçassem para ampliar a frota e crescer no
               setor.
             </p>
           </div>
           <div>
             <p>
-              Hoje, o Grupo Rodap é uma empresa líder e referência no ramo de
-              transporte coletivo, com uma frota de aproximadamente 800 ônibus e
-              administra cinco garagens próprias, contando com 2.600
-              funcionários dedicados e apaixonados pelo que fazem. Nossas
-              garagens estão localizadas nas cidades de Belo Horizonte,
-              Contagem, Betim, Santa Luzia e Ribeirão das Neves. A história da
-              Rodap é a história de uma paixão, dedicação e sucesso. Atualmente,
-              contamos com as seguintes unidades:
+              Hoje, o Grupo Rodap é uma empresa referência no ramo de transporte
+              coletivo, com uma frota de aproximadamente 600 ônibus e administra
+              quatro garagens próprias, contando com 1.500 funcionários
+              dedicados e apaixonados pelo que fazem. Nossas garagens estão
+              localizadas nas cidades de Belo Horizonte, Santa Luzia e Ribeirão
+              das Neves. Clique e confira a história das nossas unidades:
             </p>
           </div>
         </Fade>
 
-        <div className="w-full justify-center grid min-[300px]:grid-cols-2 md:grid-cols-4 my-8 lg:my-16 gap-4 md:gap-10 cursor-pointer">
+        <div className="w-full justify-center grid min-[300px]:grid-cols-1 md:grid-cols-3 my-8 lg:my-16 gap-4 md:gap-10 cursor-pointer">
           <>
             {[
-              ["Belo Horizonte", "unidade-belo-horizonte"],
               ["Santa Luzia", "unidade-santa-luzia"],
               ["São Benedito", "unidade-sao-benedito"],
               ["Justinópolis", "unidade-justinopolis"],
@@ -103,6 +99,15 @@ export default function Sobre() {
           </>
         </div>
 
+        <Fade appear>
+          <Title
+            className="!text-lg sm:!text-xl md:!text-2xl lg:!text-3xl text-center normal-case !font-medium"
+            scheme="tertiary"
+          >
+            Cuidando da frota
+          </Title>
+        </Fade>
+
         <Fade cascade>
           <div>
             <p>
@@ -116,18 +121,18 @@ export default function Sobre() {
           <div>
             <p>
               Nossos profissionais altamente especializados e treinados estão
-              sempre de prontidão, realizando vistorias, manutenções preventivas
-              e corretivas, sempre com o objetivo de garantir a qualidade e
+              sempre de prontidão, realizando manutenções preventivas e
+              corretivas, sempre com o objetivo de garantir a qualidade e
               segurança dos nossos passageiros.
             </p>
           </div>
           <div>
             <p>
               Além disso, nossos pátios são devidamente organizados para atender
-              às necessidades da logística da empresa, sem prejudicar o processo
-              de abastecimento, limpeza, manutenção e operação. A Rodap se
-              preocupa com cada detalhe para oferecer a melhor experiência de
-              transporte aos nossos clientes.
+              às necessidades da logística da empresa com o processo de
+              abastecimento, limpeza, manutenção e operação. A Rodap se preocupa
+              com cada detalhe para oferecer a melhor experiência de transporte
+              aos seus clientes.
             </p>
           </div>
         </Fade>
@@ -135,19 +140,10 @@ export default function Sobre() {
         <div className="my-8 lg:my-16 flex flex-col gap-8">
           {[
             {
-              name: "Unidade Belo Horizonte",
-              description: [
-                "A unidade de transporte de Belo Horizonte foi fundada em 1977 com o objetivo de conectar a cidade a outras localidades próximas. Através das nossas linhas, os viajantes podem desfrutar de deslocamentos seguros e confortáveis para as cidades vizinhas de Taquaraçú de Minas, Jaboticatubas, São José de Almeida e São José da Serra.",
-                "Temos orgulho em contar com uma equipe altamente capacitada e dedicada a oferecer o melhor transporte para nossos clientes. Estamos constantemente procurando maneiras de melhorar e aperfeiçoar nossos serviços, sempre com o objetivo de atender às necessidades da comunidade local.",
-              ],
-              img: featuredBeloHorizonteImg,
-              id: "unidade-belo-horizonte",
-            },
-            {
               name: "Unidade Santa Luzia",
               description: [
-                "A unidade mais antiga do Grupo Rodap iniciou suas atividades em 1968 e foi incorporada ao Grupo em 1974. Desde então, temos orgulho em atender vários bairros da região de Santa Luzia, proporcionando deslocamentos seguros e confortáveis para o centro do município, o Distrito de São Benedito e Belo Horizonte. Esses serviços são gerenciados pela Secretaria de Estado de Transporte e Obras Públicas - SETOP-MG e pela Prefeitura de Santa Luzia, garantindo a qualidade e a eficiência dos nossos serviços.",
-                "Além disso, essa unidade também oferece serviços de transporte escolar e fretamento de empregados, para atender às necessidades da comunidade local. Temos um histórico de sucesso e estamos sempre em busca de melhorias para oferecer o melhor transporte para nossa comunidade.",
+                "A Unidade Santa Luzia - a mais antiga do Grupo Rodap - iniciou suas atividades em 1968 e foi incorporada ao Grupo em 1974. Desde então, temos orgulho em atender os bairros das Partes Alta e Baixa de Santa Luzia, proporcionando deslocamentos seguros e confortáveis para o centro do município, o Distrito de São Benedito e Belo Horizonte. Essas linhas são gerenciadas pela Secretaria de Estado de Transporte e Obras Públicas (SETOP-MG) e pela Prefeitura Municipal de Santa Luzia, garantindo a qualidade e a eficiência dos nossos serviços.",
+                "Além disso, essa unidade também oferece serviços de fretamento para indústrias. Temos um histórico de sucesso e estamos sempre em busca de melhorias para oferecer o melhor transporte para nossa comunidade.",
               ],
               img: featuredSantaLuziaImg,
               id: "unidade-santa-luzia",
@@ -155,8 +151,8 @@ export default function Sobre() {
             {
               name: "Unidade São Benedito",
               description: [
-                "A unidade do Distrito de São Benedito foi fundada em 1974 com o objetivo de oferecer transporte de qualidade para a comunidade local. Desde então, temos orgulho em operar linhas que atendem os bairros do Distrito, proporcionando deslocamentos seguros e confortáveis para Belo Horizonte. Essas linhas são gerenciadas pela SETOP-MG, garantindo a qualidade e a eficiência dos nossos serviços.",
-                "Além disso, nesta unidade estão alocados os setores administrativos, onde trabalhamos diariamente para garantir a excelência no atendimento e a satisfação dos nossos clientes. Temos um histórico de sucesso e estamos sempre em busca de melhorias para oferecer o melhor transporte para nossa comunidade.",
+                "A Unidade São Benedito, localizada na cidade de Santa Luzia, foi fundada em 1974 com o objetivo de oferecer transporte de qualidade para a comunidade local. Desde então, temos orgulho em operar linhas que atendem os bairros do Distrito de São Benedito, proporcionando deslocamentos seguros e confortáveis para Belo Horizonte. Essas linhas são gerenciadas pela Secretaria de Estado de Transporte e Obras Públicas (SETOP-MG), garantindo a qualidade e a eficiência dos nossos serviços.",
+                "Além disso, nesta unidade estão centralizados setores administrativos e que atendem a todas as Unidades do grupo, onde trabalham profissionais dedicados e competentes no intuito de garantir a excelência no atendimento e a satisfação dos nossos clientes. Temos um histórico de sucesso e estamos sempre em busca de melhorias para oferecer o melhor transporte para nossa comunidade.",
               ],
               img: featuredSaoBeneditoImg,
               id: "unidade-sao-benedito",
@@ -164,7 +160,7 @@ export default function Sobre() {
             {
               name: "Unidade Justinópolis",
               description: [
-                "Fundada em 1986, a unidade de Justinópolis tem o objetivo de oferecer transporte de qualidade para a comunidade local. Atendemos a região de Justinópolis em Ribeirão das Neves, proporcionando deslocamentos seguros e confortáveis para o centro do município, Distrito de Justinópolis e Belo Horizonte. Esses serviços são gerenciados pela SETOP-MG e Secretaria de Transporte de Ribeirão das Neves, garantindo a qualidade e a eficiência dos nossos serviços.",
+                "Fundada em 1986, a Unidade Justinópolis tem o objetivo de oferecer transporte de qualidade no município de Ribeirão das Neves e na região de Venda Nova (BH), proporcionando deslocamentos seguros e confortáveis nessas localidades. Essas linhas são gerenciadas pela Secretaria de Estado de Transporte e Obras Públicas (SETOP-MG) e Secretaria de Transporte de Ribeirão das Neves, garantindo a qualidade e a eficiência dos nossos serviços.",
               ],
               img: featuredJustinopolisImg,
               id: "unidade-justinopolis",

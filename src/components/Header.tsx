@@ -14,15 +14,19 @@ export const Header = () => {
               scheme="secondary"
               className="!text-xl sm:!text-2xl lg:!text-3xl xl:!text-4xl text-center md:text-left leading-10"
             >
-              Qualidade em transporte?
+              Transporte com qualidade.
               <br />
-              Tem aqui!
+              Isso é respeito por você!
             </Title>
             <p className="lg:uppercase leading-7 text-justify lg:text-left">
-              A Rodap é líder em transporte coletivo. Oferecemos viagens seguras
-              e confortáveis, com tecnologia de ponta e equipe altamente
-              treinada. Nossos horários flexíveis atendem às necessidades de
-              nossos clientes. Experimente a diferença e escolha a Rodap!
+              O GRUPO RODAP TEM ORGULHO DE COLOCAR VOCÊ, CLIENTE, NO CENTRO DO
+              NOSSO NEGÓCIO. DESSA FORMA, GARANTIMOS A MELHOR EXPERIÊNCIA EM
+              TRANSPORTE COLETIVO AO LHE OFERECER UMA VIAGEM SEGURA E
+              CONFORTÁVEL, REALIZADA POR UMA EQUIPE ALTAMENTE TREINADA E EM
+              VEÍCULOS MODERNOS E EQUIPADOS COM TECNOLOGIA DE PONTA. E TUDO
+              ISSO, CLARO, ALINHADO A UM ATENDIMENTO DE EXCELÊNCIA E QUE ATENDA
+              AS SUAS NECESSIDADES DE TRANSPORTE. <br />
+              EXPERIMENTE A DIFERENÇA E FAÇA SUAS VIAGENS COM A RODAP!
             </p>
             <span className="text-primary font-bold">
               {/* <Link href="/horarios">Confira o horário do seu ônibus aqui</Link> */}

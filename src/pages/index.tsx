@@ -99,15 +99,16 @@ export default function Home() {
             </Title>
             <div>
               <p className="text-justify lg:text-center">
-                Você quer fazer parte de uma empresa líder em transporte
-                coletivo? A Rodap está sempre em busca de profissionais
-                talentosos, dedicados e apaixonados por transporte. Nós
-                acreditamos que nossa equipe é a chave para o sucesso e estamos
-                comprometidos em oferecer oportunidades de crescimento e
-                desenvolvimento. Se você tem a paixão pelo transporte e quer
-                fazer parte de uma equipe incrível, clique no botão abaixo e
-                confira as oportunidades disponíveis. Não perca mais tempo,
-                junte-se a nós e faça a diferença no transporte coletivo.
+                Quer fazer parte de uma empresa que preza por qualidade no
+                transporte coletivo? A Rodap é perfeita para você! Estamos
+                sempre em busca de profissionais talentosos, dedicados e
+                apaixonados por transporte. Acreditamos que nossa equipe é a
+                chave para o sucesso e estamos comprometidos em oferecer
+                oportunidades de crescimento e desenvolvimento profissional. Se
+                você tem a paixão pelo transporte e quer fazer parte de um time
+                incrível, clique no botão abaixo e confira as oportunidades
+                disponíveis. Não perca mais tempo, junte-se a nós e faça a
+                diferença no transporte coletivo.
               </p>
             </div>
           </Fade>
@@ -131,15 +132,14 @@ export default function Home() {
           </Title>
           <div>
             <p className="text-justify lg:text-center">
-              A Rodap é mais do que apenas uma empresa de transporte coletivo, é
-              uma história de dedicação e paixão. Com uma história rica e uma
-              visão ambiciosa, acreditamos que todos devem ter acesso a viagens
-              seguras, confortáveis e acessíveis. Nossos valores de segurança,
-              inovação e atendimento excepcional são a base de tudo o que
-              fazemos. Não perca a oportunidade de conhecer mais sobre a nossa
-              equipe, objetivos e como estamos contribuindo para uma sociedade
-              melhor. Clique no botão abaixo para descobrir mais sobre a Rodap e
-              se apaixonar por nossa empresa também!
+              A Rodap nasceu de uma história de dedicação e paixão pelo
+              transporte coletivo. Com muito trabalho e visão de futuro,
+              conseguimos nos transformar numa empresa sólida e que hoje, além
+              de transportar centenas de vidas todos os dias e com total
+              segurança, garantimos, também, o sustento de milhares de famílias.
+              Conheça mais sobre como começamos e aonde ainda queremos chegar.
+              Clique nos botões abaixo para descobrir mais sobre a Rodap e se
+              apaixonar por nossa empresa também!
             </p>
           </div>
           <div className="flex gap-4 lg:gap-8 flex-col md:flex-row max-w-full">
@@ -184,13 +184,16 @@ export default function Home() {
           </Title>
           <div>
             <p className="text-justify lg:text-center">
-              Você sabia que além de oferecer transporte coletivo, a Rodap
-              também tem serviços de encomendas e fretamentos? Nossa frota
-              diversificada e equipe especializada está pronta para atender às
-              suas necessidades de transporte de mercadorias e grupos. Seja para
-              uma entrega urgente ou para um evento especial, podemos ajudá-lo a
-              encontrar a solução perfeita. Descubra mais sobre, acessando nossa
-              página de serviços. Não perca mais tempo, escolha Rodap para suas
+              Além de atuar no ramo de transporte coletivo, o Grupo Rodap também
+              conta com serviços de fretamento para empresas. Através da Santa
+              Luzia Fretamentos e Turismo, oferecemos a solução perfeita de
+              transporte para os funcionários da sua empresa e/ou para grupos de
+              forma rápida e segura. Descubra mais sobre nosso serviço de
+              fretamento ao acessar o site:{" "}
+              <Link href="www.slfretamento.com.br" target="_blank">
+                www.slfretamento.com.br
+              </Link>
+              . Não perca mais tempo, escolha o Grupo Rodap para todas as suas
               necessidades de transporte!
             </p>
           </div>
@@ -215,18 +218,15 @@ export default function Home() {
           <Image src={isoImg} width={100} height={87} alt="ISO 9001" />
           <div>
             <p className="text-justify lg:text-center">
-              O Grupo Rodap se orgulha de possuir o selo ISO 9001, que é um
-              reconhecimento internacionalmente reconhecido de que a empresa
-              possui uma gestão de qualidade sólida e eficaz. Este selo é
-              concedido após uma avaliação rigorosa dos processos internos da
-              empresa e demonstra nossa dedicação em atender aos mais altos
-              padrões de qualidade. A obtenção deste selo é um indicativo de que
-              a empresa está sempre buscando a excelência e se esforçando para
-              fornecer serviços e produtos de qualidade superior aos nossos
-              clientes. Além disso, é uma garantia de que seguimos práticas de
-              negócios éticas e transparentes. Isso mostra que a empresa se
-              preocupa em estar sempre em constante evolução e melhoria, e isso
-              é algo que nos diferencia e nos orgulha muito.
+              O Grupo Rodap orgulha-se de possuir o selo de certificação ISO
+              9001 - um reconhecimento internacional que assegura a constante
+              busca da empresa na melhoria de sua gestão de processos ao avaliar
+              e acompanhar de forma frequente o melhor aproveitamento de
+              recursos, redução de erros e de retrabalhos, fatores que impactam
+              diretamente no aumento da qualidade do serviço prestado. A ISO
+              9001 atesta que o Grupo Rodap está no caminho certo e quer seguir
+              alcançando metas e objetivos na busca pela excelência em gestão no
+              transporte coletivo.
             </p>
           </div>
         </Fade>
