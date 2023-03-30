@@ -19,14 +19,14 @@ export const Header = () => {
               Isso é respeito por você!
             </Title>
             <p className="lg:uppercase leading-7 text-justify lg:text-left">
-              O GRUPO RODAP TEM ORGULHO DE COLOCAR VOCÊ, CLIENTE, NO CENTRO DO
-              NOSSO NEGÓCIO. DESSA FORMA, GARANTIMOS A MELHOR EXPERIÊNCIA EM
-              TRANSPORTE COLETIVO AO LHE OFERECER UMA VIAGEM SEGURA E
-              CONFORTÁVEL, REALIZADA POR UMA EQUIPE ALTAMENTE TREINADA E EM
-              VEÍCULOS MODERNOS E EQUIPADOS COM TECNOLOGIA DE PONTA. E TUDO
-              ISSO, CLARO, ALINHADO A UM ATENDIMENTO DE EXCELÊNCIA E QUE ATENDA
-              AS SUAS NECESSIDADES DE TRANSPORTE. <br />
-              EXPERIMENTE A DIFERENÇA E FAÇA SUAS VIAGENS COM A RODAP!
+              O grupo rodap tem orgulho de colocar você, cliente, no centro do
+              nosso negócio. Dessa forma, garantimos a melhor experiência em
+              transporte coletivo ao lhe oferecer uma viagem segura e
+              confortável, realizada por uma equipe altamente treinada e em
+              veículos modernos e equipados com tecnologia de ponta. E tudo
+              isso, claro, alinhado a um atendimento de excelência e que atenda
+              as suas necessidades de transporte. <br />
+              experimente a diferença e faça suas viagens com a rodap!
             </p>
             <span className="text-primary font-bold">
               {/* <Link href="/horarios">Confira o horário do seu ônibus aqui</Link> */}

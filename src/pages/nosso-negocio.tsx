@@ -202,7 +202,7 @@ export default function NossoNegocio() {
               Grupo podemos citar:
             </p>
           </div>
-          <ul className="list-disc my-4">
+          <ul className="list-disc my-4 text-justify ml-5">
             <li>
               Treinamento Introdutório e de Integração, responsável por
               ambientar e capacitar o novo funcionário à rotina da empresa;
@@ -251,7 +251,7 @@ export default function NossoNegocio() {
           <Title
             asChild
             scheme="tertiary"
-            className="!text-md sm:!text-lg !font-medium"
+            className="!text-sm sm:!text-lg !font-medium mt-3"
           >
             <h3>Sistema de Gestão Ambiental – SGA</h3>
           </Title>
@@ -269,11 +269,11 @@ export default function NossoNegocio() {
           <Title
             asChild
             scheme="tertiary"
-            className="!text-md sm:!text-lg !font-medium normal-case"
+            className="!text-sm sm:!text-lg !font-medium mt-4"
           >
             <h3>Programas ambientais adotados</h3>
           </Title>
-          <ul className="list-disc my-4 flex flex-col gap-4">
+          <ul className="list-disc my-4 flex flex-col gap-4 text-justify ml-5">
             <li>
               <strong>Gerenciamento de Resíduos Sólidos -</strong> Para resíduos
               perigosos, o Grupo Rodap possui contrato com empresas
