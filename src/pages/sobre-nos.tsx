@@ -101,7 +101,7 @@ export default function Sobre() {
 
         <Fade appear>
           <Title
-            className="!text-lg sm:!text-xl md:!text-2xl lg:!text-3xl text-center normal-case !font-medium"
+            className="!text-lg sm:!text-xl md:!text-2xl lg:!text-3xl text-center"
             scheme="tertiary"
           >
             Cuidando da frota

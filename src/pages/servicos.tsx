@@ -118,7 +118,7 @@ export default function Servicos() {
             <div>
               <p>
                 Aqui no Grupo Rodap você encontra os melhores ônibus e
-                microônibus seminovos à venda. Além de qualidade e confiança,
+                micro-ônibus seminovos à venda. Além de qualidade e confiança,
                 temos também preços competitivos. Fale conosco e comprove.
               </p>
             </div>

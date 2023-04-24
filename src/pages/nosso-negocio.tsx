@@ -84,14 +84,8 @@ export default function NossoNegocio() {
             </Fade>
             <Fade bottom>
               <p className="text-justify">
-                Transportar pessoas com qualidade, segurança e sustentabilidade
-                é a nossa razão de existir. Acreditamos que o transporte público
-                deve ser acessível e confiável para todos, e nos esforçamos
-                diariamente para alcançar esses objetivos. Além disso,
-                acreditamos que a inovação é fundamental para o sucesso de nossa
-                empresa e buscamos sempre implementar novas tecnologias e
-                práticas para melhorar nossos serviços e oferecer a melhor
-                experiência para nossos clientes.
+                Oferecer a melhor solução em mobilidade urbana com inovação,
+                responsabilidade e sustentabilidade.
               </p>
             </Fade>
           </div>
@@ -106,17 +100,8 @@ export default function NossoNegocio() {
             </Fade>
             <Fade bottom>
               <p className="text-justify">
-                Sermos referência em gestão de transportes de pessoas é o nosso
-                objetivo maior. Queremos ser reconhecidos por nossos clientes
-                como a melhor opção de transporte público, oferecendo serviços
-                de qualidade, segurança e sustentabilidade. Além disso, buscamos
-                ser líderes em inovação e tecnologia, sempre buscando
-                implementar soluções que melhorem a experiência do usuário e
-                tornem o transporte público ainda mais acessível e confiável.
-                Queremos ser uma empresa responsável e comprometida com a
-                comunidade, que contribua para o desenvolvimento econômico e
-                social da região onde atuamos. Nossa visão é ser uma empresa
-                respeitada e admirada por todos os stakeholders.
+                Promover soluções inovadoras em mobilidade urbana, com
+                sustentabilidade.
               </p>
             </Fade>
           </div>
@@ -131,15 +116,15 @@ export default function NossoNegocio() {
             </Fade>
             <Fade bottom>
               <p className="text-justify">
-                O compromisso com a qualidade dos serviços prestados aos
-                clientes é a base de tudo o que fazemos. Também valorizamos a
-                integração, aproximação, capacitação e desenvolvimento de nossos
-                funcionários, pois acreditamos que eles são a chave para o
-                sucesso da empresa. Além disso, buscamos manter relações
-                harmônicas com os públicos de relacionamento, promover ações
-                visando a sustentabilidade e garantir o retorno do capital
-                investido aos cotistas. Acreditamos que esses valores são
-                fundamentais para o crescimento e sucesso de nossa empresa.
+                Respeito;
+                <br />
+                Ética;
+                <br />
+                Proatividade;
+                <br />
+                Foco em resultado;
+                <br />
+                Desenvolvimento pessoal.
               </p>
             </Fade>
           </div>

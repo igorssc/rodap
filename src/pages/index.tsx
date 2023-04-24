@@ -105,7 +105,7 @@ export default function Home() {
                 apaixonados por transporte. Acreditamos que nossa equipe é a
                 chave para o sucesso e estamos comprometidos em oferecer
                 oportunidades de crescimento e desenvolvimento profissional. Se
-                você tem a paixão pelo transporte e quer fazer parte de um time
+                você tem paixão pelo transporte e quer fazer parte de um time
                 incrível, clique no botão abaixo e confira as oportunidades
                 disponíveis. Não perca mais tempo, junte-se a nós e faça a
                 diferença no transporte coletivo.
@@ -137,9 +137,9 @@ export default function Home() {
               conseguimos nos transformar numa empresa sólida e que hoje, além
               de transportar centenas de vidas todos os dias e com total
               segurança, garantimos, também, o sustento de milhares de famílias.
-              Conheça mais sobre como começamos e aonde ainda queremos chegar.
-              Clique nos botões abaixo para descobrir mais sobre a Rodap e se
-              apaixonar por nossa empresa também!
+              Conheça mais sobre como começamos. Clique nos botões abaixo para
+              descobrir mais sobre a Rodap e se apaixonar por nossa empresa
+              também!
             </p>
           </div>
           <div className="flex gap-4 lg:gap-8 flex-col md:flex-row max-w-full">

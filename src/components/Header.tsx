@@ -26,7 +26,10 @@ export const Header = () => {
               veículos modernos e equipados com tecnologia de ponta. E tudo
               isso, claro, alinhado a um atendimento de excelência e que atenda
               as suas necessidades de transporte. <br />
-              experimente a diferença e faça suas viagens com a rodap!
+              <br />
+              <span className="font-bold">
+                Experimente a diferença e faça suas viagens com a rodap!
+              </span>
             </p>
             <span className="text-primary font-bold">
               {/* <Link href="/horarios">Confira o horário do seu ônibus aqui</Link> */}
