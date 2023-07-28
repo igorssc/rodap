@@ -19,6 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
     // { name: "Venda de veículos", to: "/venda-de-veiculos" },
     // { name: "Horários", to: "/horarios" },
     { name: "Serviços", to: "/servicos" },
+    { name: "Recargas", to: "/recargas" },
   ];
 
   return (

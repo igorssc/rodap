@@ -231,6 +231,47 @@ export default function Home() {
           </div>
         </Fade>
       </Container>
+
+      <Container className="flex flex-col gap-14 justify-center items-center my-16">
+        <Fade appear cascade>
+          <Title
+            className="!text-xl sm:!text-2xl text-center"
+            scheme="secondary"
+          >
+            Objetivo de qualidade
+          </Title>
+          <ul className="flex max-sm:flex-col items-center justify-center gap-4 text-white">
+            <li className="bg-primary py-16 px-8 text-center rounded max-sm:w-full">
+              Aperfeiçoar a gestão de acordo com a dinâmica dos negócios;
+            </li>
+            <li className="bg-primary py-16 px-8 text-center rounded max-sm:w-full">
+              Buscar a satisfação dos clientes com serviços de qualidade;
+            </li>
+            <li className="bg-primary py-16 px-8 text-center rounded max-sm:w-full">
+              Promover o desenvolvimento e capacitação profissional.
+            </li>
+          </ul>
+        </Fade>
+      </Container>
+
+      <Container className="flex flex-col gap-14 justify-center items-center my-16">
+        <Fade appear cascade>
+          <Title
+            className="!text-xl sm:!text-2xl text-center"
+            scheme="secondary"
+          >
+            Política da Qualidade
+          </Title>
+          <div>
+            <p className="text-justify lg:text-center">
+              Transportar pessoas com pontualidade e segurança, assegurar o
+              atendimento aos requisitos e a eficácia dos processos através da
+              gestão da qualidade, buscando a melhoria contínua e a satisfação
+              dos clientes.
+            </p>
+          </div>
+        </Fade>
+      </Container>
     </>
   );
 }

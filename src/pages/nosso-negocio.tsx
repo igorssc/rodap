@@ -1,13 +1,13 @@
 import Head from "next/head";
+import Image from "next/image";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import LampImg from "../assets/lamp.svg";
-import PuzzlePiecesImg from "../assets/puzzle-pieces.svg";
+import missionImg from "../assets/missao.webp";
 import TargetImg from "../assets/target.svg";
 import TrophyImg from "../assets/trophy.svg";
 import { Banner } from "../components/Banner";
 import { Container } from "../components/Container";
-import { Slide } from "../components/Slide";
 import { Title } from "../components/Title";
 
 export default function NossoNegocio() {
@@ -30,16 +30,20 @@ export default function NossoNegocio() {
       <Container className="my-8 lg:my-16 flex flex-col gap-4">
         <div className="flex max-lg:flex-col items-center justify-center gap-8 lg:gap-16">
           <Zoom bottom>
-            <PuzzlePiecesImg className="w-full lg:w-[409px] h-auto" />
+            <Image
+              src={missionImg}
+              alt="ícone de missão"
+              className="w-full lg:w-[409px] h-auto"
+            />
           </Zoom>
           <Fade cascade>
             <p className="text-justify flex-1">
-              O Grupo Rodap é um empreendimento que se orgulha de seus
-              princípios sólidos e políticas que dão suporte ao planejamento
-              estratégico e visam o desenvolvimento de ações e projetos de longa
-              duração e sustentáveis. Entendemos que a melhoria contínua da
-              gestão é essencial para aumentar a satisfação dos colaboradores e
-              da comunidade. Por isso, estamos sempre em busca de maneiras de
+              O Grupo Rodap é uma organização que se orgulha de seus princípios
+              sólidos e políticas que dão suporte ao planejamento estratégico e
+              visam o desenvolvimento de ações e projetos de longa duração e
+              sustentáveis. Entendemos que a melhoria contínua da gestão é
+              essencial para aumentar a satisfação dos colaboradores e da
+              comunidade. Por isso, estamos sempre em busca de maneiras de
               melhorar nossos processos e aprimorar nossos serviços, para
               garantir que estamos sempre alcançando nossos objetivos e fazendo
               a diferença na vida das pessoas. Investimos em inovações e
@@ -53,86 +57,104 @@ export default function NossoNegocio() {
               Em 2022, revisamos o nosso Planejamento Estratégico e definimos as
               novas diretrizes que orientarão a nossa empresa para um propósito
               compartilhado, visando atingir os objetivos organizacionais até
-              2025. Conheça agora a nossa visão, missão e valores; nossos
-              objetivos e política da qualidade; e os nossos valores
+              2025. Conheça agora a nossa visão, missão e os nossos valores
               organizacionais:
             </p>
           </Fade>
         </div>
 
-        <Fade bottom>
-          <p className="my-4 sm:my-8 lg:my-16 !font-normal !normal-case italic !text-primary text-justify lg:text-center">
-            &ldquo;Transportar pessoas com carinho, pontualidade e segurança é
-            nossa missão. Garantir que cada viagem seja uma experiência
-            agradável e segura é a nossa prioridade. Estamos sempre buscando a
-            excelência através da gestão da qualidade, garantindo que todos os
-            processos estejam de acordo com os requisitos e eficazes, para
-            garantir a satisfação de nossos clientes e buscar a melhoria
-            contínua.&rdquo;
-          </p>
-        </Fade>
-
-        <div className="grid md:grid-cols-3 items-start gap-8">
-          <div className="flex items-center justify-center gap-8 flex-col">
+        <div className="grid md:grid-cols-3 items-stretch gap-8 mt-4 sm:mt-8 lg:mt-16">
+          <div className="flex items-center justify-center gap-8 flex-col bg-primary p-8 rounded text-white">
             <Zoom>
               <TargetImg />
             </Zoom>
             <Fade>
-              <Title asChild scheme="tertiary" className="!text-xl">
+              <Title asChild scheme="primary" className="!text-xl">
                 <h3>Missão</h3>
               </Title>
             </Fade>
             <Fade bottom>
-              <p className="text-justify">
+              <p className="text-center">
                 Oferecer a melhor solução em mobilidade urbana com inovação,
-                responsabilidade e sustentabilidade.
+                responsabilidade e sustentabilidade
               </p>
             </Fade>
           </div>
-          <div className="flex items-center justify-center gap-8 flex-col">
+          <div className="flex items-center justify-center gap-8 flex-col bg-primary p-8 rounded text-white">
             <Zoom>
               <LampImg />
             </Zoom>
             <Fade>
-              <Title asChild scheme="tertiary" className="!text-xl">
+              <Title asChild scheme="primary" className="!text-xl">
                 <h3>Visão</h3>
               </Title>
             </Fade>
             <Fade bottom>
-              <p className="text-justify">
+              <p className="text-center">
                 Promover soluções inovadoras em mobilidade urbana, com
-                sustentabilidade.
+                sustentabilidade
               </p>
             </Fade>
           </div>
-          <div className="flex items-center justify-center gap-8 flex-col">
+          <div className="flex items-center justify-center gap-8 flex-col bg-primary p-8 rounded text-white">
             <Zoom>
               <TrophyImg />
             </Zoom>
             <Fade>
-              <Title asChild scheme="tertiary" className="!text-xl">
+              <Title asChild scheme="primary" className="!text-xl">
                 <h3>Valores</h3>
               </Title>
             </Fade>
             <Fade bottom>
-              <p className="text-justify">
-                Respeito;
+              <p className="text-center">
+                Respeito
                 <br />
-                Ética;
+                Ética
                 <br />
-                Proatividade;
+                Proatividade
                 <br />
-                Foco em resultado;
+                Foco em resultado
                 <br />
-                Desenvolvimento pessoal.
+                Desenvolvimento pessoal
               </p>
             </Fade>
           </div>
         </div>
 
-        <Zoom>
-          <Slide />
-        </Zoom>
+        <Fade cascade>
+          <Title
+            asChild
+            scheme="tertiary"
+            className="!text-xl sm:!text-2xl mt-4 sm:mt-8"
+          >
+            <h2>Valores Organizacionais</h2>
+          </Title>
+
+          <ul className="list-disc my-4 flex flex-col gap-4 text-justify ml-5">
+            <li>
+              <strong>Respeito -</strong> Tratar com cordialidade, se colocar no
+              lugar do outro e ser exemplo no que se faz.
+            </li>
+            <li>
+              <strong>Ética e responsabilidade -</strong> Agir com lealdade,
+              honestidade e transparência, estabelecendo relações de confiança.
+            </li>
+            <li>
+              <strong>Proatividade -</strong> Antecipar as necessidades do
+              negócio e propor soluções criativas.
+            </li>
+            <li>
+              <strong>Foco e compromisso com o resultado -</strong> Trabalhar
+              continuamente em prol de ações que visem a sustentabilidade e
+              perenidade da Organização.
+            </li>
+            <li>
+              <strong>Desenvolvimento Pessoal e Reconhecimento –</strong>{" "}
+              Promover a integração e o desenvolvimento, valorizando pessoas e
+              fomentando um ambiente harmônico.
+            </li>
+          </ul>
+        </Fade>
 
         <Fade cascade>
           <Title
@@ -293,14 +315,17 @@ export default function NossoNegocio() {
               automotores são monitorados.
             </li>
             <li>
-              <strong>Prêmio FRETRAM de Qualidade do Ar -</strong> Em junho de
-              2022, o Grupo Rodap recebeu o Prêmio FRETRAM de Qualidade do Ar. A
-              empresa foi reconhecida como uma das organizações do setor de
-              transporte que se destacou durante todo o ano de 2021 no uso
-              racional de combustível e na baixa de emissão de poluentes pelos
-              veículos, através de sua participação no Programa Despoluir,
-              coordenado pela Federação das Empresas de Transporte de
-              Passageiros do Estado de Minas Gerais (FETRAM).
+              <strong>Prêmio FRETRAM de Qualidade do Ar -</strong> O Grupo Rodap
+              conta com cinco usinas de energia solar fotovoltaica. Através da
+              radiação solar, geramos energia renovável e limpa, o que
+              consequentemente contribui com a sustentabilidade do planeta. Por
+              este motivo, todo ano, a empresa recebe o Prêmio FRETRAM de
+              Qualidade do Ar, sendo reconhecida como uma das organizações do
+              setor de transporte que se destaca no uso racional de combustível
+              e na baixa de emissão de poluentes pelos veículos, através de sua
+              participação no Programa Despoluir, coordenado pela Federação das
+              Empresas de Transporte de Passageiros do Estado de Minas Gerais
+              (FETRAM).
             </li>
             <li>
               <strong>Boas Práticas Ambientais –</strong> Os funcionários
@@ -317,12 +342,6 @@ export default function NossoNegocio() {
               auto-monitoramento da frota (teste de opacidade) para averiguar a
               emissão de poluentes no meio ambiente, com o objetivo de
               controlá-los.
-            </li>
-            <li>
-              <strong>Geramos nossa própria energia –</strong> Contamos com
-              usina de energia solar fotovoltaica. Através da radiação solar,
-              geramos energia renovável e limpa, o que consequentemente
-              contribui com a sustentabilidade do planeta.
             </li>
           </ul>
         </Fade>

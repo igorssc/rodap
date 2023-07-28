@@ -74,35 +74,14 @@ export default function Servicos() {
             scheme="tertiary"
             className="!text-xl sm:!text-2xl mt-4 sm:mt-8"
           >
-            <h2>Recarga Vale Transporte Elêtronico</h2>
+            <h2>Vendas de ônibus</h2>
           </Title>
           <div className="flex flex-col gap-4 text-justify">
             <div>
               <p>
-                Os cartões BHBus e Ótimo trouxeram um novo conceito para o
-                transporte coletivo em Belo Horizonte e na Região Metropolitana,
-                substituindo o antigo sistema de vale transporte de papel. Com
-                eles, os usuários podem desfrutar de maior comodidade e
-                segurança, além de gerar economia e melhor gerenciamento do
-                benefício para os empregadores.
-              </p>
-            </div>
-            <div>
-              <p>
-                Os cartões podem ser adquiridos tanto por pessoas físicas quanto
-                jurídicas e não é necessário se deslocar a um estabelecimento
-                comercial para adquirir créditos eletrônicos. É possível
-                solicitar os créditos pela internet. Entre nos site{" "}
-                <Link href="www.transfacil.com.br" target="_blank">
-                  www.transfacil.com.br
-                </Link>{" "}
-                e saiba mais sobre o cartão BHBus, que atende a Belo Horizonte,
-                e/ou acesse{" "}
-                <Link href="www.otimoonline.com.br" target="_blank">
-                  www.otimoonline.com.br
-                </Link>{" "}
-                para saber mais sobre o Ótimo, que atende à Região Metropolitana
-                de Belo Horizonte (RMBH).
+                Aqui no Grupo Rodap você encontra os melhores ônibus e
+                micro-ônibus seminovos à venda. Além de qualidade e confiança,
+                temos também preços competitivos. Fale conosco e comprove.
               </p>
             </div>
           </div>
@@ -112,14 +91,27 @@ export default function Servicos() {
             scheme="tertiary"
             className="!text-xl sm:!text-2xl mt-4 sm:mt-8"
           >
-            <h2>Vendas de ônibus</h2>
+            <h2>SEJA NOSSO FORNECEDOR</h2>
           </Title>
           <div className="flex flex-col gap-4 text-justify">
             <div>
               <p>
-                Aqui no Grupo Rodap você encontra os melhores ônibus e
-                micro-ônibus seminovos à venda. Além de qualidade e confiança,
-                temos também preços competitivos. Fale conosco e comprove.
+                O Grupo Rodap deseja construir e manter uma boa relação com os
+                fornecedores. O objetivo é criar parcerias duradouras, em que o
+                profundo comprometimento seja a chave para alcançarmos juntos os
+                nossos objetivos.
+              </p>
+            </div>
+            <div>
+              <p>
+                Caso a sua empresa tenha interesse em oferecer produtos ou
+                serviços ao nosso Grupo, entre em contato conosco pelo telefone{" "}
+                <Link href="tel:+55 (31) 3517-7613">(31) 3517-7613</Link> ou
+                e-mail{" "}
+                <Link href="mailto:compras@rodap.com.br">
+                  compras@rodap.com.br
+                </Link>
+                .
               </p>
             </div>
           </div>

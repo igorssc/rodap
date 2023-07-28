@@ -18,7 +18,7 @@ export const Header = () => {
               <br />
               Isso é respeito por você!
             </Title>
-            <p className="lg:uppercase leading-7 text-justify lg:text-left">
+            <p className="leading-7 text-justify lg:text-left">
               O grupo rodap tem orgulho de colocar você, cliente, no centro do
               nosso negócio. Dessa forma, garantimos a melhor experiência em
               transporte coletivo ao lhe oferecer uma viagem segura e
